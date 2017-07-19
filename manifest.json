@@ -851,7 +851,7 @@
 			"description_list": [],
 			"type": "Intrinsic",
 			"icon": "perk_mobile_warlock_armor.png"
-		},
+		}
 	},
 	"mods": {
 		"infuse": {
@@ -1372,7 +1372,7 @@
 				"rifle_scope_st",
 				
 				"tactical_mag",
-				"armor_piercing_rounds"
+				"armor_piercing_rounds",
 				
 				"kill_clip"
 			],
@@ -1396,7 +1396,7 @@
 				"rifle_scope_ssf",
 				
 				"steady_rounds",
-				"appended_mag"
+				"appended_mag",
 				
 				"moving_target"
 			],
@@ -1421,7 +1421,7 @@
 				"fluted_barrel",
 				
 				"accurized_rounds",
-				"steady_rounds"
+				"steady_rounds",
 				
 				"sway_redux"
 			],
@@ -1447,7 +1447,7 @@
 				"crossfire_hcs",
 				
 				"drop_mag",
-				"flared_mag"
+				"flared_mag",
 				
 				"opening_shot"
 			],
@@ -1473,7 +1473,7 @@
 				"smoothbore",
 				
 				"appended_mag",
-				"assault_mag"
+				"assault_mag",
 				
 				"auto_loading_holster"
 			],
@@ -1613,7 +1613,7 @@
 				"flash_hs5",
 				
 				"ricochet_rounds",
-				"steady_rounds"
+				"steady_rounds",
 				
 				"full_auto_trigger_system"
 			],
@@ -1638,7 +1638,7 @@
 				
 				"extended_mag",
 				
-				"superconductor"
+				"superconductor",
 				
 				"short_action_stock"
 			],
