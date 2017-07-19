@@ -1,0 +1,1789 @@
+{
+	"traits":	{
+		"resilience": {
+			"id": "resilience",
+			"name": "Resilience",
+			"description": "Increases the amount of damage you can take before dying.",
+			"icon": "trait_resilience.png"
+		},
+		"mobility": {
+			"id": "mobility",
+			"name": "Mobility",
+			"description": "Increases your movement speed and maximum jump height.",
+			"icon": "trait_mobility.png"
+		},
+		"recovery": {
+			"id": "recovery",
+			"name": "Recovery",
+			"description": "Increases the speed at which you regain lost health.",
+			"icon": "trait_recovery.png"
+		}
+	},
+	"perks": {
+		"adaptive_frame": {
+			"id": "adaptive_frame",
+			"name": "Adaptive Frame",
+			"description": "A well-rounded grip, reliable and sturdy.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_adaptive_frame.png"
+		},
+		"lightweight_frame": {
+			"id": "lightweight_frame",
+			"name": "Lightweight Frame",
+			"description": "Superb handling. Move faster with this weapon equipped.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_lightweight_frame.png"
+		},
+		"veist_auto": {
+			"id": "veist_auto",
+			"name": "Veist Rapid-Fire",
+			"description": "Full Auto. Deeper ammo reserves. Slightly faster reload when magazine is empty.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_veist_auto.png"
+		},
+		"rapid_fire_frame": {
+			"id": "rapid_fire_frame",
+			"name": "Rapid-Fire Frame",
+			"description": "Deeper ammo reserves. Slightly faster reload when magazine is empty.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_veist_auto.png"
+		},
+		"aggressive_frame": {
+			"id": "aggressive_frame",
+			"name": "Aggressive Frame",
+			"description": "High damage, high recoil.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_aggressive_frame.png"
+		},
+		"high_impact_frame": {
+			"id": "high_impact_frame",
+			"name": "High-Impact Frame",
+			"description": "Slow-firing and high-damage. This weapon is more accurate when stationary and aiming down sights.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_high_impact_frame.png"
+		},
+		"precision_frame": {
+			"id": "precision_frame",
+			"name": "Precision Frame",
+			"description": "This weapon's recoil pattern is more predictably vertical.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_precision_frame.png"
+		},
+		"fastdraw_hcs": {
+			"id": "fastdraw_hcs",
+			"name": "Fastdraw HCS",
+			"description": "Agile Hand Cannon sight.",
+			"description_list": [
+				"Greatly increases handling speed",
+				"Slightly increases stability"
+			],
+			"type": "Sight",
+			"icon": "perk_sight.png"
+		},
+		"steadyhand_hcs": {
+			"id": "steadyhand_hcs",
+			"name": "Steadyhand HCS",
+			"description": "Stable Hand Cannon sight.",
+			"description_list": [
+				"Increases stability",
+				"Increases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight.png"
+		},
+		"sureshot_hcs": {
+			"id": "sureshot_hcs",
+			"name": "Sureshot HCS",
+			"description": "Pinpoint Hand Cannon sight.",
+			"description_list": [
+				"Increases range",
+				"Decreases stability",
+				"Decreases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight.png"
+		},
+		"hitmark_is": {
+			"id": "hitmark_is",
+			"name": "Hitmark IS",
+			"description": "Agile sight. Short zoom.",
+			"description_list": [
+				"Greatly increases handling speed",
+				"Slightly increases range"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_hitmark_is.png"
+		},
+		"extended_mag": {
+			"id": "extended_mag",
+			"name": "Extended Mag",
+			"description": "This weapon has a greatly increased magazine size, but reloads much slower.",
+			"description_list": [
+				"Greatly increases magazine size",
+				"Greatly decreases reload speed"
+			],
+			"type": "Magazine",
+			"icon": "perk_extended_mag.png"
+		},
+		"drop_mag": {
+			"id": "drop_mag",
+			"name": "Drop Mag",
+			"description": "Magazine drops on reload, wasting ammunition but greatly increasing reload speed.",
+			"description_list": [],
+			"type": "Magazine",
+			"icon": "perk_drop_mag.png"
+		},
+		"explosive_payload": {
+			"id": "explosive_payload",
+			"name": "Explosive Payload",
+			"description": "Projectiles create an area-of-effect detonation on impact.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_explosive_payload.png"
+		},
+		"red_dot_micro": {
+			"id": "red_dot_micro",
+			"name": "Red Dot Micro",
+			"description": "Agile sight. Short zoom.",
+			"description_list": [
+				"Increases range",
+				"Increases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_red_dot.png"
+		},
+		"red_dot_2_moa": {
+			"id": "red_dot_2_moa",
+			"name": "Red Dot 2 MOA",
+			"description": "Snapshot sight. Short zoom.",
+			"description_list": [
+				"Slightly increases range",
+				"Increases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_red_dot.png"
+		},
+		"rifle_scope_st": {
+			"id": "rifle_scope_st",
+			"name": "Rifle Scope ST",
+			"description": "Ranged scope. Long zoom.",
+			"description_list": [
+				"Increases range",
+				"Decreases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_rifle.png"
+		},
+		"rifle_scope_ssf": {
+			"id": "rifle_scope_ssf",
+			"name": "Rifle Scope SSF",
+			"description": "Focused scope. Long zoom.",
+			"description_list": [
+				"Slightly increases range",
+				"Slightly decreases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_rifle.png"
+		},
+		"cleanshot_is": {
+			"id": "cleanshot_is",
+			"name": "Cleanshot IS",
+			"description": "Snapshot sight. Short zoom.",
+			"description_list": [
+				"Increases handling speed",
+				"Slightly increases range"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_cleanshot.png"
+		},
+		"tactical_mag": {
+			"id": "tactical_mag",
+			"name": "Tactical Mag",
+			"description": "This weapon has multiple tactical improvements.",
+			"description_list": [
+				"Slightly increases stability",
+				"Slightly increases reload speed",
+				"Slightly increases magazine size"
+			],
+			"type": "Magazine",
+			"icon": "perk_tacitcal_mag.png"
+		},
+		"appended_mag": {
+			"id": "appended_mag",
+			"name": "Appended Mag",
+			"description": "This weapon's magazine is built for higher capacity.",
+			"description_list": [
+				"Increases magazine size"
+			],
+			"type": "Magazine",
+			"icon": "perk_appended_mag.png"
+		},
+		"sway_redux": {
+			"id": "sway_redux",
+			"name": "Dynamic Sway Reduction",
+			"description": "When holding down the trigger, this weapon's sway-reduction system boosts accuracy and stability over time.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_sway_redux.png"
+		},
+		
+		"is_5_circle": {
+			"id": "is_5_circle",
+			"name": "IS 5 Circle",
+			"description": "Circular iron sights. Short zoom.",
+			"description_list": [
+				"Greatly increases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_is5_circle.png"
+		},
+		"model_8_red": {
+			"id": "model_8_red",
+			"name": "Model 8 Red",
+			"description": "Red-dot. Medium zoom.",
+			"description_list": [
+				"Greatly increases range"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_model8_red.png"
+		},
+		"mark_10_glass": {
+			"id": "mark_10_glass",
+			"name": "Mark 10 Glass",
+			"description": "Ocular sights. Long zoom.",
+			"description_list": [
+				"Increases range",
+				"Slightly decreases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_mark10_glass.png"
+		},
+		"high_caliber_rounds": {
+			"id": "high_caliber_rounds",
+			"name": "High-Caliber Rounds",
+			"description": "Shots from this weapon knock the target back farther.",
+			"description_list": [
+				"Slightly increases range"
+			],
+			"type": "Magazine",
+			"icon": "perk_high_caliber_rounds.png"
+		},
+		"armor_piercing_rounds": {
+			"id": "armor_piercing_rounds",
+			"name": "Armor-Piercing Rounds",
+			"description": "Rounds cause extra damage to shields and overpenetrate targets.",
+			"description_list": [
+				"Slightly increases range"
+			],
+			"type": "Magazine",
+			"icon": "perk_armor_piercing_rounds.png"
+		},
+		"under_pressure": {
+			"id": "under_pressure",
+			"name": "Under Pressure",
+			"description": "Improved Stability and Accuracy as the magazine gets lower.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_under_pressure.png"
+		},
+		
+		"full_bore": {
+			"id": "full_bore",
+			"name": "Full Bore",
+			"description": "Barrel optimized for distance.",
+			"description_list": [
+				"Greatly increases range",
+				"Decreases stability",
+				"Slightly decreases handling speed"
+			],
+			"type": "Barrel",
+			"icon": "perk_full_bore.png"
+		},
+		"fluted_barrel": {
+			"id": "fluted_barrel",
+			"name": "Fluted Barrel",
+			"description": "Ultra-light barrel.",
+			"description_list": [
+				"Greatly increases handling speed",
+				"Slightly increases stability"
+			],
+			"type": "Barrel",
+			"icon": "perk_fluted_barrel.png"
+		},
+		"arrowhead_brake": {
+			"id": "arrowhead_brake",
+			"name": "Arrowhead Brake",
+			"description": "Lightly vented barrel.",
+			"description_list": [
+				"Greatly controls recoil",
+				"Increases handling speed"
+			],
+			"type": "Barrel",
+			"icon": "perk_arrowhead_brake.png"
+		},
+		"steady_rounds": {
+			"id": "steady_rounds",
+			"name": "Steady Rounds",
+			"description": "This magaizine is optimized for recoil control.",
+			"description_list": [
+				"Greatly increases stability",
+				"Slightly decreases range"
+			],
+			"type": "Magazine",
+			"icon": "perk_steady_rounds.png"
+		},
+		"moving_target": {
+			"id": "moving_target",
+			"name": "Moving Target",
+			"description": "Increased movement speed and target acquisition when moving while aiming down sights.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_moving_target.png"
+		},
+		
+		"chambered_compensator": {
+			"id": "chambered_compensator",
+			"name": "Chambered Compensator",
+			"description": "Stable barrel attachment.",
+			"description_list": [
+				"Increases stability",
+				"Improves recoil direction",
+				"Slightly decreases handling speed"
+			],
+			"type": "Barrel",
+			"icon": "perk_chambered_compensator.png"
+		},
+		"tap_trigger": {
+			"id": "tap_trigger",
+			"name": "Tap the Trigger",
+			"description": "Grants a short period of Increased Stability and Accuracy on initial trigger pull.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_tap_trigger.png"
+		},
+		
+		"candle_ps": {
+			"id": "candle_ps",
+			"name": "Candle PS",
+			"description": "Omolon post sight. Short zoom.",
+			"description_list": [
+				"Greatly increases handling speed",
+				"Slightly increases range"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_omolon_candle.png"
+		},
+		"flash_hs5": {
+			"id": "flash_hs5",
+			"name": "Flash HS5",
+			"description": "Omolon red-dot. Medium zoom. Highlights enemy targets.",
+			"description_list": [
+				"Increases range",
+				"Slightly increases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_omolon_flash.png"
+		},
+		"torch_hs3": {
+			"id": "torch_hs3",
+			"name": "Torch HS3",
+			"description": "Omolon red-dot. Medium zoom.",
+			"description_list": [
+				"Greatly increases range",
+				"Slightly decreases handling speed"
+			],
+			"type": "Scope",
+			"icon": "perk_scope_omolon_torch.png"
+		},
+		"alloy_mag": {
+			"id": "alloy_mag",
+			"name": "Alloy Magazine",
+			"description": "Faster reloads when the magazine is empty.",
+			"description_list": [],
+			"type": "Magazine",
+			"icon": "perk_alloy_mag.png"
+		},
+		"phase_mag": {
+			"id": "phase_mag",
+			"name": "Phase Magazine",
+			"description": "Increases damage while lowering rate of fire.",
+			"description_list": [
+				"Decreases magazine size"
+			],
+			"type": "Magazine",
+			"icon": "perk_phase_mag.png"
+		},
+		
+		"tactic_sas": {
+			"id": "tactic_sas",
+			"name": "Tactic SAS",
+			"description": "Accurate Sidearm sight.",
+			"description_list": [
+				"Slightly increases range"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_sas.png"
+		},
+		"target_sas": {
+			"id": "target_sas",
+			"name": "Target SAS",
+			"description": "Sharp Sidearm sight.",
+			"description_list": [
+				"Increases range",
+				"Slightly decreases stability",
+				"Slightly decreases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_sas.png"
+		},
+		"farpoint_sas": {
+			"id": "farpoint_sas",
+			"name": "Farpoint SAS",
+			"description": "Pinpoint Sidearm sight.",
+			"description_list": [
+				"Greatly increases range",
+				"Decreases stability",
+				"Decreases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight_sas.png"
+		},
+		
+		"outlaw": {
+			"id": "outlaw",
+			"name": "Outlaw",
+			"description": "Precision kills greatly decrease reload time.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_outlaw.png"
+		},
+		"sunburn": {
+			"id": "sunburn",
+			"name": "Sunburn",
+			"description": "This weapon fires explosive rounds and highlights targets that take damage from Sunshot.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_sunburn.png"
+		},
+		"accurized_rounds": {
+			"id": "accurized_rounds",
+			"name": "Accurized Rounds",
+			"description": "This weapon can fire longer distances.",
+			"description_list": [
+				"Increases range"
+			],
+			"type": "Magazine",
+			"icon": "perk_accurized_rounds.png"
+		},
+		"ricochet_rounds": {
+			"id": "ricochet_rounds",
+			"name": "Ricochet Rounds",
+			"description": "Rounds ricochet off hard surfaces.",
+			"description_list": [
+				"Increases stability",
+				"Slightly increases range"
+			],
+			"type": "Magazine",
+			"icon": "perk_ricochet_rounds.png"
+		},
+		"sun_blast": {
+			"id": "sun_blast",
+			"name": "Sun Blast",
+			"description": "Targets killed with Sunshot explode in Solar energy.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_sun_blast.png"
+		},
+		"textured_grip": {
+			"id": "textured_grip",
+			"name": "Textured Grip",
+			"description": "The friction on this weapon's grip is particularly strong.",
+			"description_list": [
+				"Greatly increases handling speed",
+				"Slightly decreases stability"
+			],
+			"type": "Grip",
+			"icon": "perk_textured_grip.png"
+		},
+		
+		"smallbore": {
+			"id": "smallbore",
+			"name": "Smallbore",
+			"description": "Dual strength barrel.",
+			"description_list": [
+				"Increases range",
+				"Increases stability"
+			],
+			"type": "Barrel",
+			"icon": "perk_smallbore.png"
+		},
+		"flared_mag": {
+			"id": "flared_mag",
+			"name": "Flared Magwell",
+			"description": "Increases Reload speed.",
+			"description_list": [],
+			"type": "Magazine",
+			"icon": "perk_flared_mag.png"
+		},
+		"firmly_planted": {
+			"id": "firmly_planted",
+			"name": "Firmly Planted",
+			"description": "Increased accuracy, stability, and handling when firing while crouched.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_firmly_planted.png"
+		},
+		
+		"volatile_launch": {
+			"id": "volatile_launch",
+			"name": "Volatile Launch",
+			"description": "This weapon is optimized for an especially explosive payload.",
+			"description_list": [
+				"Greatly increases blast radius",
+				"Slightly decreases handling speed",
+				"Slightly decreases projectile speed"
+			],
+			"type": "Launcher Barrel",
+			"icon": "perk_volatile_launch.png"
+		},
+		"confined_launch": {
+			"id": "confined_launch",
+			"name": "Confined Launch",
+			"description": "This weapon's launch parameters are particularly stable.",
+			"description_list": [
+				"Greatly increases stability",
+				"Increases blast radius",
+				"Decreases projectile speed"
+			],
+			"type": "Launcher Barrel",
+			"icon": "perk_confined_launch.png"
+		},
+		"mini_frags": {
+			"id": "mini_frags",
+			"name": "Mini Frags",
+			"description": "Grenades are smaller and more compact for easier reloading.",
+			"description_list": [
+				"Increases magazine size",
+				"Increases reload speed"
+			],
+			"type": "Magazine",
+			"icon": "perk_mini_frags.png"
+		},
+		"thermo_grenades": {
+			"id": "thermo_grenades",
+			"name": "Thermoplastic Grenades",
+			"description": "Grenades fired from this weapon bounce further.",
+			"description_list": [
+				"Increases stability",
+				"Increases projectile speed"
+			],
+			"type": "Magazine",
+			"icon": "perk_thermo_grenades.png"
+		},
+		"pulse_monitor": {
+			"id": "pulse_monitor",
+			"name": "Pulse Monitor",
+			"description": "Automatically reloads a portion of the magazine when wielder is critically wounded.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_pulse_monitor.png"
+		},
+		
+		"random_mod": {
+			"id": "random_mod",
+			"name": "Random Mod",
+			"description": "A mod with randomly generated upgrades.",
+			"description_list": [],
+			"type": "",
+			"icon": "perk_random.png"
+		},
+		
+		"mobile_hunter_armor": {
+			"id": "mobile_hunter_armor",
+			"name": "Mobile Hunter Armor",
+			"description": "Additional mobility at the cost of resilience.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_mobile_hunter_armor.png"
+		},
+		"heavy_hunter_armor": {
+			"id": "heavy_hunter_armor",
+			"name": "Heavy Hunter Armor",
+			"description": "Improved resilience.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_heavy_hunter_armor.png"
+		},
+		"resilience_mod": {
+			"id": "resilience_mod",
+			"name": "Plasteel Reinforcement Mod",
+			"description": "Increased Resilience.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_resilience_mod.png"
+		},
+		"restorative_mod": {
+			"id": "restorative_mod",
+			"name": "Restorative Mod",
+			"description": "Increased Health Recovery.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_restorative_mod.png"
+		},
+		"mobility_mod": {
+			"id": "mobility_mod",
+			"name": "Mobility Enhancement Mod",
+			"description": "Increased Mobility.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_mobility_mod.png"
+		},
+		
+		"payday": {
+			"id": "payday",
+			"name": "Payday",
+			"description": "Larger magazine. Increased accuracy when firing from the hip.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_sweet_business.png"
+		},
+		"polygonal_rifling": {
+			"id": "polygonal_rifling",
+			"name": "Polygonal Rifling",
+			"description": "Barrel optimized for recoil reduction.",
+			"description_list": [
+				"Increases stability"
+			],
+			"type": "Barrel",
+			"icon": "perk_polygonal_rifling.png"
+		},
+		"business_time": {
+			"id": "business_time",
+			"name": "Business Time",
+			"description": "Holding down the trigger boosts this weapon's range and rate of fire, and automatically loads ammo pickups into the magazine.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_business_time.png"
+		},
+		"composite_stock": {
+			"id": "composite_stock",
+			"name": "Composite Stock",
+			"description": "This weapon has a versatile dual-purpose stock.",
+			"description_list": [
+				"Slightly increases stability",
+				"Slightly increased handling speed"
+			],
+			"type": "Stock",
+			"icon": "perk_composite_stock.png"
+		},
+		
+		"kill_clip": {
+			"id": "kill_clip",
+			"name": "Kill Clip",
+			"description": "Reloading after a kill grants increased damage.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_kill_clip.png"
+		},
+		"extended_barrel": {
+			"id": "extended_barrel",
+			"name": "Extended Barrel",
+			"description": "Weighty barrel extension.",
+			"description_list": [
+				"Increases range",
+				"Decreases handling speed"
+			],
+			"type": "Barel",
+			"icon": "perk_extended_barrel.png"
+		},
+		
+		"truesight_hcs": {
+			"id": "truesight_hcs",
+			"name": "Truesight HCS",
+			"description": "Balanced Hand Cannon sight.",
+			"description_list": [
+				"Slightly increases range",
+				"Slightly increases stability",
+				"Slightly increases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight.png"
+		},
+		"crossfire_hcs": {
+			"id": "crossfire_hcs",
+			"name": "Crossfire HCS",
+			"description": "Sharp Hand Cannon sight.",
+			"description_list": [
+				"Increases range",
+				"Slightly decreases stability",
+				"Slightly decreases handling speed"
+			],
+			"type": "Sight",
+			"icon": "perk_sight.png"
+		},
+		"opening_shot": {
+			"id": "opening_shot",
+			"name": "Opening Shot",
+			"description": "Improved Accuracy and Range on the opening shot of attack.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_opening_shot.png"
+		},
+		"full_choke": {
+			"id": "full_choke",
+			"name": "Full Choke",
+			"description": "Tightened barrel. Reduces projectile spread when aiming down sights at the cost of precision damage.",
+			"description_list": [],
+			"type": "Barrel",
+			"icon": "perk_full_choke.png"
+		},
+		"smoothbore": {
+			"id": "smoothbore",
+			"name": "Smoothbore",
+			"description": "Smooth shotgun barrel. Greatly increases range at the cost of more projectile spread.",
+			"description_list": [],
+			"type": "Barrel",
+			"icon": "perk_smoothbore.png"
+		},
+		"assault_mag": {
+			"id": "assault_mag",
+			"name": "Assault Mag",
+			"description": "This shotgun's magazine is optimized for quick combat.",
+			"description_list": [
+				"Greatly increases stability",
+				"Increases rate of fire"
+			],
+			"type": "Magazine",
+			"icon": "perk_assault_mag.png"
+		},
+		"auto_loading_holster": {
+			"id": "auto_loading_holster",
+			"name": "Auto-Loading Holster",
+			"description": "The holstered weapon is automatically reloaded after a short period of time.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_auto_loading_holster.png"
+		},
+		
+		"heavy_titan_armor": {
+			"id": "heavy_titan_armor",
+			"name": "Heavy Titan Armor",
+			"description": "Additional resilience at the cost of mobility.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_heavy_titan_armor.png"
+		},
+		"full_auto_trigger_system": {
+			"id": "full_auto_trigger_system",
+			"name": "Full Auto Trigger System",
+			"description": "Holding down the trigger will fire this weapon at full auto.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_full_auto_trigger_system.png"
+		},
+		"arc_conductor": {
+			"id": "arc_conductor",
+			"name": "Arc Conductor",
+			"description": "When taking Arc Damage, this weapon becomes more powerful and resists incoming Arc Damage. Kills extend the time in this overcharged state.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_arc_conductor.png"
+		},
+		"superconductor": {
+			"id": "superconductor",
+			"name": "Superconductor",
+			"description": "When Arc Conductor is active, shots fired have the chance to become chain lightning and return ammo.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_superconductor.png"
+		},
+		"short_action_stock": {
+			"id": "short_action_stock",
+			"name": "Short-Action Stock",
+			"description": "The weapon is especially easy to grip.",
+			"description_list": [
+				"Greatly increases handling speed"
+			],
+			"type": "Stock",
+			"icon": "perk_short_action_stock.png"
+		},
+		"enhanced_battery": {
+			"id": "enhanced_battery",
+			"name": "Enhanced Battery",
+			"description": "Strong battery life.",
+			"description_list": [
+				"Increases magazine size"
+			],
+			"type": "Battery",
+			"icon": "perk_enhanced_battery.png"
+		},
+		"liquid_coils": {
+			"id": "liquid_coils",
+			"name": "Liquid Coils",
+			"description": "Slower-building charge for higher damage.",
+			"description_list": [
+				"Increases impact damage",
+				"Slower charge time"
+			],
+			"type": "Battery",
+			"icon": "perk_liquid_coils.png"
+		},
+		"rampage": {
+			"id": "rampage",
+			"name": "Rampage",
+			"description": "Kills with this weapon temporarily grant increased damage. Stacks 3x.",
+			"description_list": [],
+			"type": "Trait",
+			"icon": "perk_rampage.png"
+		},
+		
+		"mobile_warlock_armor": {
+			"id": "mobile_warlock_armor",
+			"name": "Mobile Warlock Armor",
+			"description": "Additional mobility at the cost of resilience.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_mobile_warlock_armor.png"
+		},
+	},
+	"mods": {
+		"infuse": {
+			"id": "infuse",
+			"name": "Legendary Infusion",
+			"description": "Select a piece of Legendary Gear to consume. That item will be used to infuse another item with power.",
+			"rarity": "Legendary",
+			"icon": "mod_infusion.png"
+		},
+		"shader_default": {
+			"id": "shader_default",
+			"name": "Default Shader",
+			"description": "",
+			"action": "Restore Defaults",
+			"rarity": "Common",
+			"icon": "mod_shader_default.png"
+		},
+		"arc_damage": {
+			"id": "arc_damage",
+			"name": "Arc Damage Mod",
+			"description": "Equip this to a weapon to charge its rounds with Arc energy.",
+			"action": "Weapon Mod",
+			"rarity": "Rare",
+			"icon": "mod_arc_damage.png"
+		},
+		"solar_damage": {
+			"id": "solar_damage",
+			"name": "Solar Damage Mod",
+			"description": "Equip this to a weapon to charge its rounds with Solar energy.",
+			"action": "Weapon Mod",
+			"rarity": "Rare",
+			"icon": "mod_solar_damage.png"
+		},
+		"void_damage": {
+			"id": "void_damage",
+			"name": "Void Damage Mod",
+			"description": "Equip this to a weapon to charge its rounds with Void energy.",
+			"action": "Weapon Mod",
+			"rarity": "Rare",
+			"icon": "mod_void_damage.png"
+		},
+		"empty_socket": {
+			"id": "empty_socket",
+			"name": "Empty Socket",
+			"description": "Standard, no modifications.",
+			"action": "Armor Mod",
+			"rarity": "Common",
+			"icon": "mod_empty_socket.png"
+		},
+		
+		"shader_tarnished_copper": {
+			"id": "shader_tarnished_copper",
+			"name": "Tarnished Copper",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_tarnished_copper.png"
+		},
+		"shader_hakke_history_polish": {
+			"id": "shader_hakke_history_polish",
+			"name": "Hakke History Polish",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_hakke_history_polish.png"
+		},
+		"shader_cerulean_divide": {
+			"id": "shader_cerulean_divide",
+			"name": "Cerulean Divide",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_cerulean_divide.png"
+		}
+	},
+	"items": {
+		"better_devils": {
+			"id": "better_devils",
+			"name": "Better Devils",
+			"description": "Angels can't help you here.",
+			"type": "Hand Cannon",
+			"rarity": "Legendary",
+			"damageType": "Kinetic",
+			"perks": [
+				"adaptive_frame",
+				
+				"fastdraw_hcs",
+				"steadyhand_hcs",
+				"sureshot_hcs",
+				
+				"extended_mag",
+				"drop_mag",
+				"explosive_payload"
+			],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_pistol_better_devils.png"
+		},
+		"showrunner": {
+			"id": "showrunner",
+			"name": "The Showrunner",
+			"description": "Once you have one, you'll wonder how you ever did without.",
+			"type": "Submachine Gun",
+			"rarity": "Legendary",
+			"damageType": "Kinetic",
+			"perks": [
+				"lightweight_frame",
+				
+				"red_dot_micro",
+				"red_dot_2_moa",
+				"cleanshot_is",
+				
+				"tactical_mag",
+				"appended_mag",
+				
+				"sway_redux"
+			],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_smg_showrunner.png"
+		},
+		"scathelocke": {
+			"id": "scathelocke",
+			"name": "Scathelocke",
+			"description": "This weapon was forged by Devrim Kay VIII for the survivors.",
+			"type": "Auto Rifle",
+			"rarity": "Legendary",
+			"damageType": "Kinetic",
+			"perks": [
+				"adaptive_frame",
+				
+				"is_5_circle",
+				"model_8_red",
+				"mark_10_glass",
+				
+				"high_caliber_rounds",
+				"tactical_mag",
+				
+				"under_pressure"
+			],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_auto_scathelocke.png"
+		},
+		"black_scorpion_4sr": {
+			"id": "black_scorpion_4sr",
+			"name": "Black Scorpion-4SR",
+			"description": "I attack from the shadows. I never miss.",
+			"type": "Scout Rifle",
+			"rarity": "Legendary",
+			"damageType": "Arc",
+			"perks": [
+				"veist_auto",
+				
+				"full_bore",
+				"fluted_barrel",
+				"arrowhead_brake",
+				
+				"tactical_mag",
+				"steady_rounds",
+				
+				"moving_target"
+			],
+			"mods": [
+				"infuse",
+				"arc_damage",
+				"shader_default"
+			],
+			"icon": "icon_scout_black_scorpion_4sr.png"
+		},
+		"red_mamba_3mg": {
+			"id": "red_mamba_3mg",
+			"name": "Red Mamba-3MG",
+			"description": "My venom is swift.",
+			"type": "Submachine Gun",
+			"rarity": "Legendary",
+			"damageType": "Arc",
+			"perks": [
+				"lightweight_frame",
+				
+				"arrowhead_brake",
+				"full_bore",
+				"chambered_compensator",
+				
+				"steady_rounds",
+				"high_caliber_rounds",
+				
+				"tap_trigger"
+			],
+			"mods": [
+				"infuse",
+				"arc_damage",
+				"shader_default"
+			],
+			"icon": "icon_smg_red_mamba_3mg.png"
+		},
+		"urchin_3si": {
+			"id": "urchin_3si",
+			"name": "Urchin-3SI",
+			"description": "I will draw them in, then take them out.",
+			"type": "Sidearm",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"lightweight_frame",
+				
+				"tactic_sas",
+				"target_sas",
+				"farpoint_sas",
+				
+				"steady_rounds",
+				"tactical_mag",
+				
+				"outlaw"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage",
+				"shader_default"
+			],
+			"icon": "icon_sidearm_urchin_3si.png"
+		},
+		"phosphorus_mg4": {
+			"id": "phosphorus_mg4",
+			"name": "Phosphorus MG4",
+			"description": "The star in the east, the fire in the dawn.",
+			"type": "Submachine Gun",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"lightweight_frame",
+				
+				"candle_ps",
+				"flash_hs5",
+				
+				"alloy_mag",
+				"steady_rounds",
+				"phase_mag",
+				
+				"sway_redux"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage"
+			],
+			"icon": "icon_smg_phosphorus_mg4.png"
+		},
+		"sunshot": {
+			"id": "sunshot",
+			"name": "Sunshot",
+			"description": "\"Can't outrun the sunrise.\" \u2013 Liu Feng",
+			"type": "Hand Cannon",
+			"rarity": "Exotic",
+			"damageType": "Solar",
+			"perks": [
+				"sunburn",
+				
+				"chambered_compensator",
+				
+				"accurized_rounds",
+				
+				"sun_blast",
+				
+				"textured_grip"
+			],
+			"mods": [],
+			"icon": "icon_pistol_sunshot.png"
+		},
+		"copperhead_4sn": {
+			"id": "copperhead_4sn",
+			"name": "Copperhead-4SN",
+			"description": "My fangs are bared.",
+			"type": "Sniper Rifle",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"rapid_fire_frame",
+				
+				"full_bore",
+				"smallbore",
+				"arrowhead_brake",
+				
+				"tactical_mag",
+				"flared_mag",
+				
+				"firmly_planted"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage",
+				"shader_default"
+			],
+			"icon": "icon_sniper_copperhead_4sn.png"
+		},
+		"acantha_d": {
+			"id": "acantha_d",
+			"name": "Acantha-D",
+			"description": "Your piercing Light knows no limits; your searcher's heart, no bounds.",
+			"type": "Grenade Launcher",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"aggressive_frame",
+				
+				"volatile_launch",
+				"confined_launch",
+				
+				"mini_frags",
+				"thermo_grenades",
+				
+				"pulse_monitor"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage"
+			],
+			"icon": "icon_grenader_acantha_d.png"
+		},
+		"last_city_shell": {
+			"id": "last_city_shell",
+			"name": "Last City Shell",
+			"description": "For Ghosts who call the Last City home.",
+			"type": "Ghost",
+			"rarity": "Legendary",
+			"perks": [
+				"random_mod",
+				"random_mod"
+			],
+			"mods": [
+				"shader_default"
+			],
+			"icon": "icon_ghost_last_city_shell.png"
+		},
+		
+		"frumious_mask": {
+			"id": "frumious_mask",
+			"name": "Frumious Mask",
+			"description": "You put the \"snicker\" in \"snicker-snack.\"",
+			"type": "Helmet",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_hunter_armor",
+				
+				"resilience_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_helmet_frumious_mask.png"
+		},
+		"frumious_grips": {
+			"id": "frumious_grips",
+			"name": "Frumious Grips",
+			"description": "It makes perfect sense to you. And that's all that matters.",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_hunter_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_gauntlets_frumious_grips.png"
+		},
+		"frumious_vest": {
+			"id": "frumious_vest",
+			"name": "Frumious Vest",
+			"description": "When have you ever known Hunters to do as they were told?",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_hunter_armor",
+				
+				"resilience_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_chest_frumious_vest.png"
+		},
+		"frumious_strides": {
+			"id": "frumious_strides",
+			"name": "Frumious Strides",
+			"description": "Mostly the hero\u2013but with a healthy dash of the monster, too. That's what it means to be a Hunter.",
+			"type": "Leg Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_hunter_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_legs_frumious_strides.png"
+		},
+		"frumious_cloak": {
+			"id": "frumious_cloak",
+			"name": "Frumious Cloak",
+			"description": "Beware!",
+			"type": "Hunter Cloak",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_class_frumious_cloak.png"
+		},
+		
+		"helios_strain": {
+			"id": "helios_strain",
+			"name": "Helios Strain",
+			"description": "A Vector-class refit designed for near-solar exploration.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_tarnished_copper"
+			],
+			"icon": "icon_ship_helios_strain.png"
+		},
+		
+		"emblem_hunters_wit": {
+			"id": "emblem_hunters_wit",
+			"name": "Hunter's Wit",
+			"description": "",
+			"type": "Emblem",
+			"rarity": "Common",
+			"perks": [],
+			"mods": [],
+			"icon": "icon_emblem_hunters_wit.png"
+		},
+		
+		"emote_point": {
+			"id": "emote_point",
+			"name": "Point",
+			"description": "Over there...",
+			"type": "Emote",
+			"rarity": "Uncommon",
+			"perks": [],
+			"icon": "icon_emote_point.png"
+		},
+		
+		"took_offense": {
+			"id": "took_offense",
+			"name": "The Took Offense",
+			"description": "It's all good fun... until it's not.",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_hunter_armor",
+				
+				"resilience_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_chest_took_offense.png"
+		},
+		
+		"sweet_business": {
+			"id": "sweet_business",
+			"name": "Sweet Business",
+			"description": "...I love my job.",
+			"type": "Auto Rifle",
+			"rarity": "Exotic",
+			"damageType": "Kinetic",
+			"perks": [
+				"payday",
+				
+				"polygonal_rifling",
+				
+				"high_caliber_rounds",
+				
+				"business_time",
+				
+				"composite_stock"
+			],
+			"mods": [],
+			"icon": "icon_auto_sweet_business.png"
+		},
+		"nightshade": {
+			"id": "nightshade",
+			"name": "Nightshade",
+			"description": "Three drops is all it takes.",
+			"type": "Pulse Rifle",
+			"rarity": "Legendary",
+			"damageType": "Kinetic",
+			"perks": [
+				"lightweight_frame",
+				
+				"red_dot_micro",
+				"red_dot_2_moa",
+				"rifle_scope_st",
+				
+				"tactical_mag",
+				"armor_piercing_rounds"
+				
+				"kill_clip"
+			],
+			"mods": [
+				"infuse"
+			],
+			"icon": "icon_pulse_nightshade.png"
+		},
+		"does_not_compute": {
+			"id": "does_not_compute",
+			"name": "Does Not Compute",
+			"description": "The engineers aren't ready for us.",
+			"type": "Scout Rifle",
+			"rarity": "Legendary",
+			"damageType": "Kinetic",
+			"perks": [
+				"high_impact_frame",
+				
+				"red_dot_2_moa",
+				"rifle_scope_st",
+				"rifle_scope_ssf",
+				
+				"steady_rounds",
+				"appended_mag"
+				
+				"moving_target"
+			],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_scout_does_not_compute.png"
+		},
+		"deathstalker_4au": {
+			"id": "deathstalker_4au",
+			"name": "Deathstalker-4AU",
+			"description": "I am poised for the strike.",
+			"type": "Auto Rifle",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"rapid_fire_frame",
+				
+				"arrowhead_brake",
+				"extended_barrel",
+				"fluted_barrel",
+				
+				"accurized_rounds",
+				"steady_rounds"
+				
+				"sway_redux"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage",
+				"shader_default"
+			],
+			"icon": "icon_auto_deathstalker_4au.png"
+		},
+		"minuet_42": {
+			"id": "minuet_42",
+			"name": "Minuet-42",
+			"description": "SUROS invites you to join the dance.",
+			"type": "Hand Cannon",
+			"rarity": "Legendary",
+			"damageType": "Solar",
+			"perks": [
+				"adaptive_frame",
+				
+				"steadyhand_hcs",
+				"truesight_hcs",
+				"crossfire_hcs",
+				
+				"drop_mag",
+				"flared_mag"
+				
+				"opening_shot"
+			],
+			"mods": [
+				"infuse",
+				"solar_damage",
+				"shader_default"
+			],
+			"icon": "icon_auto_deathstalker_4au.png"
+		},
+		"retrofuturist": {
+			"id": "retrofuturist",
+			"name": "Retrofuturist",
+			"description": "They were so optimisitc about us.",
+			"type": "Shotgun",
+			"rarity": "Legendary",
+			"damageType": "Void",
+			"perks": [
+				"lightweight_frame",
+				
+				"full_choke",
+				"polygonal_rifling",
+				"smoothbore",
+				
+				"appended_mag",
+				"assault_mag"
+				
+				"auto_loading_holster"
+			],
+			"mods": [
+				"infuse",
+				"void_damage",
+				"shader_default"
+			],
+			"icon": "icon_shotgun_retrofuturist.png"
+		},
+		
+		"helmet_noble_constant_type_2": {
+			"id": "helmet_noble_constant_type_2",
+			"name": "Noble Constant Type 2",
+			"description": "Take pride in your duty.",
+			"type": "Helmet",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_helmet_noble_constant_type_2.png"
+		},
+		"gauntlets_noble_constant_type_2": {
+			"id": "gauntlets_noble_constant_type_2",
+			"name": "Noble Constant Type 2",
+			"description": "So long as one Titan stands, so too stands the Wall.",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"resilience_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_gauntlets_noble_constant_type_2.png"
+		},
+		"chest_noble_constant_type_2": {
+			"id": "chest_noble_constant_type_2",
+			"name": "Noble Constant Type 2",
+			"description": "Steadfast and true.",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"resilience_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_chest_noble_constant_type_2.png"
+		},
+		"legs_noble_constant_type_2": {
+			"id": "legs_noble_constant_type_2",
+			"name": "Noble Constant Type 2",
+			"description": "Our sweat, our sacrifice, our responsibility.",
+			"type": "Leg Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_legs_noble_constant_type_2.png"
+		},
+		"class_noble_constant_mark": {
+			"id": "class_noble_constant_mark",
+			"name": "Noble Constant Mark",
+			"description": "Where you stand, they will fall.",
+			"type": "Titan Mark",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_class_noble_constant_mark.png"
+		},
+		
+		"merdian_sv": {
+			"id": "merdian_sv",
+			"name": "Meridian SV",
+			"description": "The thin line between us and them.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_hakke_history_polish"
+			],
+			"icon": "icon_ship_merdian_sv.png"
+		},
+		
+		"emblem_titans_pride": {
+			"id": "emblem_titans_pride",
+			"name": "Titan's Pride",
+			"description": "",
+			"type": "Emblem",
+			"rarity": "Common",
+			"perks": [],
+			"mods": [],
+			"icon": "icon_emblem_titans_pride.png"
+		},
+		
+		"nergal_pr4": {
+			"id": "nergal_pr4",
+			"name": "Nergal PR4",
+			"description": "Take arms against the lions of death, the kings of sunset.",
+			"type": "Pulse Rifle",
+			"rarity": "Legendary",
+			"damageType": "Void",
+			"perks": [
+				"lightweight_frame",
+				
+				"torch_hs3",
+				"flash_hs5",
+				
+				"ricochet_rounds",
+				"steady_rounds"
+				
+				"full_auto_trigger_system"
+			],
+			"mods": [
+				"infuse",
+				"void_damage",
+				"shader_default"
+			],
+			"icon": "icon_pulse_nergal_pr4.png"
+		},
+		"riskrunner": {
+			"id": "riskrunner",
+			"name": "Riskrunner",
+			"description": "Change your soul and let the electrons sing.",
+			"type": "Submachine Gun",
+			"rarity": "Exotic",
+			"damageType": "Arc",
+			"perks": [
+				"arc_conductor",
+				
+				"arrowhead_break",
+				
+				"extended_mag",
+				
+				"superconductor"
+				
+				"short_action_stock"
+			],
+			"mods": [],
+			"icon": "icon_smg_riskrunner.png"
+		},
+		"main_ingredient": {
+			"id": "main_ingredient",
+			"name": "Main Ingredient",
+			"description": "\"Now stir the sauce...\"",
+			"type": "Fusion Rifle",
+			"rarity": "Legendary",
+			"damageType": "Arc",
+			"perks": [
+				"precision_frame",
+				
+				"red_dot_2_moa",
+				"cleanshot_is",
+				"hitmark_is",
+				
+				"enhanced_battery",
+				"liquid_coils",
+				
+				"rampage"
+			],
+			"mods": [
+				"infuse",
+				"arc_damage",
+				"shader_default"
+			],
+			"icon": "icon_fusion_main_ingredient.png"
+		},
+		
+		"helmet_ego_talon_iv": {
+			"id": "helmet_ego_talon_iv",
+			"name": "Ego Talon IV",
+			"description": "\"Question everything. Accept nothing.\" \u2013 Tyra Karn",
+			"type": "Helmet",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_warlock_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_helmet_ego_talon_iv.png"
+		},
+		"gauntlets_ego_talon_iv": {
+			"id": "gauntlets_ego_talon_iv",
+			"name": "Ego Talon IV",
+			"description": "\"A nimble mind makes a nimble trigger finger.\" \u2013 Ikora Rey",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_warlock_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_gauntlets_ego_talon_iv.png"
+		},
+		"chest_ego_talon_iv": {
+			"id": "chest_ego_talon_iv",
+			"name": "Ego Talon IV",
+			"description": "\"To know the universe, you must first know yourself.\" \u2013 Ikora Rey",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_warlock_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_ego_talon_iv.png"
+		},
+		"legs_ego_talon_iv": {
+			"id": "legs_ego_talon_iv",
+			"name": "Ego Talon IV",
+			"description": "\"Knowledge is its own end.\" \u2013 Toland, the Shattered",
+			"type": "Leg Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"mobile_warlock_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"icon": "icon_ego_talon_iv.png"
+		},
+		"class_ego_talon_bond": {
+			"id": "class_ego_talon_bond",
+			"name": "Ego Talon Bond",
+			"description": "\"You will find the nightmares grow worse. Thankfully, you no longer have need of sleep\" \u2013 Gallida Tuyet",
+			"type": "Warlock Bond",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"icon": "icon_class_ego_talon_bond.png"
+		},
+		
+		"captain_nemo": {
+			"id": "captain_nemo",
+			"name": "Captain Nemo",
+			"description": "Nobody ventured farther.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_cerulean_divide"
+			],
+			"icon": "icon_ship_captain_nemo.png"
+		},
+		
+		"emblem_warlocks_flight": {
+			"id": "emblem_warlocks_flight",
+			"name": "Warlock's Flight",
+			"description": "",
+			"type": "Emblem",
+			"rarity": "Common",
+			"perks": [],
+			"mods": [],
+			"icon": "icon_emblem_warlocks_flight.png"
+		}
+	}
+}
