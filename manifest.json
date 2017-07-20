@@ -652,7 +652,7 @@
 			"description": "Larger magazine. Increased accuracy when firing from the hip.",
 			"description_list": [],
 			"type": "Intrinsic",
-			"icon": "perk_sweet_business.png"
+			"icon": "perk_payday.png"
 		},
 		"polygonal_rifling": {
 			"id": "polygonal_rifling",
@@ -1313,6 +1313,7 @@
 			"type": "Emote",
 			"rarity": "Uncommon",
 			"perks": [],
+			"mods": [],
 			"icon": "icon_emote_point.png"
 		},
 		
@@ -1575,8 +1576,8 @@
 			"icon": "icon_class_noble_constant_mark.png"
 		},
 		
-		"merdian_sv": {
-			"id": "merdian_sv",
+		"meridian_sv": {
+			"id": "meridian_sv",
 			"name": "Meridian SV",
 			"description": "The thin line between us and them.",
 			"type": "Ship",
@@ -1585,7 +1586,7 @@
 			"mods": [
 				"shader_hakke_history_polish"
 			],
-			"icon": "icon_ship_merdian_sv.png"
+			"icon": "icon_ship_meridian_sv.png"
 		},
 		
 		"emblem_titans_pride": {
@@ -1634,7 +1635,7 @@
 			"perks": [
 				"arc_conductor",
 				
-				"arrowhead_break",
+				"arrowhead_brake",
 				
 				"extended_mag",
 				
@@ -1727,7 +1728,7 @@
 				"empty_socket",
 				"shader_default"
 			],
-			"icon": "icon_ego_talon_iv.png"
+			"icon": "icon_chest_ego_talon_iv.png"
 		},
 		"legs_ego_talon_iv": {
 			"id": "legs_ego_talon_iv",
@@ -1746,7 +1747,7 @@
 				"empty_socket",
 				"shader_default"
 			],
-			"icon": "icon_ego_talon_iv.png"
+			"icon": "icon_legs_ego_talon_iv.png"
 		},
 		"class_ego_talon_bond": {
 			"id": "class_ego_talon_bond",
