@@ -76,6 +76,14 @@
 			"type": "Intrinsic",
 			"icon": "perk_precision_frame.png"
 		},
+		"hakke_precision_frame": {
+			"id": "hakke_precision_frame",
+			"name": "H\u00E4kke Precision Frame",
+			"description": "This weapon fires a small auto-tracking missile. Missiles lock onto targets when aimed.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_precision_frame.png"
+		},
 		"fastdraw_hcs": {
 			"id": "fastdraw_hcs",
 			"name": "Fastdraw HCS",
@@ -602,7 +610,7 @@
 			"description": "A mod with randomly generated upgrades.",
 			"description_list": [],
 			"type": "",
-			"icon": "perk_random.png"
+			"icon": "perk_random_mod.png"
 		},
 		
 		"mobile_hunter_armor": {
@@ -928,6 +936,29 @@
 			"description_list": [],
 			"type": "Trait",
 			"icon": "perk_zen_moment.png"
+		},
+		
+		"alloy_casing": {
+			"id": "alloy_casing",
+			"name": "Alloy Casing",
+			"description": "Reduces weight for faster reloads.",
+			"description_list": [
+				"Greatly increases reload speed.",
+				"Decreases stability."
+			],
+			"type": "Magazine",
+			"icon": "perk_alloy_casing.png"
+		},
+		"high_velocity_rounds": {
+			"id": "high_velocity_rounds",
+			"name": "High-Velocity Rounds",
+			"description": "This weapon's projectiles are particularly light and quick.",
+			"description_list": [
+				"Increases projectile speed.",
+				"Increases reload speed."
+			],
+			"type": "Magazine",
+			"icon": "perk_high_velocity_rounds.png"
 		}
 	},
 	"mods": {
@@ -989,7 +1020,7 @@
 		},
 		"shader_hakke_history_polish": {
 			"id": "shader_hakke_history_polish",
-			"name": "Hakke History Polish",
+			"name": "H\u00E4kke History Polish",
 			"description": "Equip this shader to change the color of your gear.",
 			"action": "Shader",
 			"rarity": "Legendary",
@@ -1002,6 +1033,38 @@
 			"action": "Shader",
 			"rarity": "Legendary",
 			"icon": "mod_shader_cerulean_divide.png"
+		},
+		"shader_xenosilver": {
+			"id": "shader_xenosilver",
+			"name": "Xenosilver",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_xenosilver.png"
+		},
+		"shader_suros_modular_shine": {
+			"id": "shader_suros_modular_shine",
+			"name": "Suros Modular Shine",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_suros_modular_shine.png"
+		},
+		"shader_nebula_rose": {
+			"id": "shader_nebula_rose",
+			"name": "Nebula Rose",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_nebula_rose.png"
+		},
+		"shader_bumblebee": {
+			"id": "shader_bumblebee",
+			"name": "Bumblebee",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_bumblebee.png"
 		}
 	},
 	"items": {
@@ -1026,6 +1089,11 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"warlock",
+				"strike"
 			],
 			"icon": "icon_pistol_better_devils.png",
 			"image": "pistol_better_devils.jpg",
@@ -1054,6 +1122,10 @@
 				"infuse",
 				"shader_default"
 			],
+			"sources": [
+				"titan",
+				"hunter"
+			],
 			"icon": "icon_smg_showrunner.png",
 			"image": "smg_showrunner.jpg",
 			"background": "smg_showrunner_no_hud.jpg"
@@ -1080,6 +1152,11 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"warlock",
+				"crucible"
 			],
 			"icon": "icon_auto_scathelocke.png",
 			"image": "auto_scathelocke.jpg",
@@ -1109,6 +1186,10 @@
 				"arc_damage",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"warlock"
+			],
 			"icon": "icon_scout_black_scorpion_4sr.png",
 			"image": "scout_black_scorpion_4sr.jpg",
 			"background": "scout_black_scorpion_4sr_no_hud.jpg"
@@ -1136,6 +1217,9 @@
 				"infuse",
 				"arc_damage",
 				"shader_default"
+			],
+			"sources": [
+				"hunter"
 			],
 			"icon": "icon_smg_red_mamba_3mg.png",
 			"image": "smg_red_mamba_3mg.jpg",
@@ -1165,6 +1249,10 @@
 				"solar_damage",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"warlock"
+			],
 			"icon": "icon_sidearm_urchin_3si.png",
 			"image": "sidearm_urchin_3si.jpg",
 			"background": "sidearm_urchin_3si_no_hud.jpg"
@@ -1192,6 +1280,9 @@
 				"infuse",
 				"solar_damage"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_smg_phosphorus_mg4.png",
 			"image": "smg_phosphorus_mg4.jpg",
 			"background": "smg_phosphorus_mg4_no_hud.jpg"
@@ -1215,6 +1306,9 @@
 				"textured_grip"
 			],
 			"mods": [],
+			"sources": [
+				"hunter"	
+			],
 			"icon": "icon_pistol_sunshot.png",
 			"image": "pistol_sunshot.jpg",
 			"background": "pistol_sunshot_no_hud.jpg"
@@ -1243,6 +1337,9 @@
 				"solar_damage",
 				"shader_default"
 			],
+			"sources": [
+				"hunter"
+			],
 			"icon": "icon_sniper_copperhead_4sn.png",
 			"image": "sniper_copperhead_4sn.jpg",
 			"background": "sniper_copperhead_4sn_no_hud.jpg"
@@ -1269,26 +1366,15 @@
 				"infuse",
 				"solar_damage"
 			],
+			"sources": [
+				"titan",
+				"hunter",
+				"warlock",
+				"strike"
+			],
 			"icon": "icon_grenader_acantha_d.png",
 			"image": "grenader_acantha_d.jpg",
 			"background": "grenader_acantha_d_no_hud.jpg"
-		},
-		"last_city_shell": {
-			"id": "last_city_shell",
-			"name": "Last City Shell",
-			"description": "For Ghosts who call the Last City home.",
-			"type": "Ghost",
-			"rarity": "Legendary",
-			"perks": [
-				"random_mod",
-				"random_mod"
-			],
-			"mods": [
-				"shader_default"
-			],
-			"icon": "icon_ghost_last_city_shell.png",
-			"image": "ghost_last_city_shell.jpg",
-			"background": "ghost_last_city_shell_no_hud.jpg"
 		},
 		
 		"sweet_business": {
@@ -1310,6 +1396,9 @@
 				"composite_stock"
 			],
 			"mods": [],
+			"sources": [
+				"titan"	
+			],
 			"icon": "icon_auto_sweet_business.png",
 			"image": "auto_sweet_business.jpg",
 			"background": "auto_sweet_business_no_hud.jpg"
@@ -1335,6 +1424,10 @@
 			],
 			"mods": [
 				"infuse"
+			],
+			"sources": [
+				"titan",
+				"warlock"
 			],
 			"icon": "icon_pulse_nightshade.png",
 			"image": "pulse_nightshade.jpg",
@@ -1362,6 +1455,10 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
 			],
 			"icon": "icon_scout_does_not_compute.png",
 			"image": "scout_does_not_compute.jpg",
@@ -1419,6 +1516,9 @@
 				"solar_damage",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_pistol_minuet_42.png",
 			"image": "pistol_minuet_42.jpg",
 			"background": "pistol_minuet_42_no_hud.jpg"
@@ -1447,6 +1547,9 @@
 				"void_damage",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_shotgun_retrofuturist.png",
 			"image": "shotgun_retrofuturist.jpg",
 			"background": "shotgun_retrofuturist_no_hud.jpg"
@@ -1458,6 +1561,7 @@
 			"description": "No one will escape my web.",
 			"type": "Linear Fusion Rifle",
 			"rarity": "Legendary",
+			"damageType": "Arc",
 			"perks": [
 				"precision_frame",
 				
@@ -1485,6 +1589,7 @@
 			"description": "Time frays at its edges. We must be the seams.",
 			"type": "Sidearm",
 			"rarity": "Legendary",
+			"damageType": "Kinetic",
 			"perks": [
 				"precision_frame",
 				
@@ -1529,6 +1634,9 @@
 				"void_damage",
 				"shader_default"
 			],
+			"sources": [
+				"warlock"
+			],
 			"icon": "icon_pulse_nergal_pr4.png",
 			"image": "pulse_nergal_pr4.jpg",
 			"background": "pulse_nergal_pr4_no_hud.jpg"
@@ -1552,6 +1660,9 @@
 				"short_action_stock"
 			],
 			"mods": [],
+			"sources": [
+				"warlock"	
+			],
 			"icon": "icon_smg_riskrunner.png",
 			"image": "smg_riskrunner.jpg",
 			"background": "smg_riskrunner_no_hud.jpg"
@@ -1580,9 +1691,39 @@
 				"arc_damage",
 				"shader_default"
 			],
+			"sources": [
+				"warlock"
+			],
 			"icon": "icon_fusion_main_ingredient.png",
 			"image": "fusion_main_ingredient.jpg",
 			"background": "fusion_main_ingredient_no_hud.jpg"
+		},
+		"rocket_morrigan_d": {
+			"id": "rocket_morrigan_d",
+			"name": "Morrigan-D",
+			"description": "Your domain is the battlefield. Its ways are your ways.",
+			"type": "Rocket Launcher",
+			"rarity": "Legendary",
+			"damageType": "Arc",
+			"perks": [
+				"hakke_precision_frame",
+				
+				"confined_launch",
+				"volatile_launch",
+				
+				"alloy_casing",
+				"high_velocity_rounds",
+				
+				"snapshot_sights"
+			],
+			"mods": [
+				"infuse",
+				"arc_damage",
+				"shader_default"
+			],
+			"icon": "icon_rocket_morrigan_d.png",
+			"image": "rocket_morrigan_d.jpg",
+			"background": "rocket_morrigan_d_no_hud.jpg"
 		},
 		
 		"frumious_mask": {
@@ -1601,6 +1742,9 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"hunter"	
 			],
 			"icon": "icon_helmet_frumious_mask.png",
 			"image": "helmet_frumious_mask.jpg",
@@ -1623,6 +1767,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter"	
+			],
 			"icon": "icon_gauntlets_frumious_grips.png",
 			"image": "gauntlets_frumious_grips.jpg",
 			"background": "gauntlets_frumious_grips_no_hud.jpg"
@@ -1643,6 +1790,9 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"hunter"	
 			],
 			"icon": "icon_chest_frumious_vest.png",
 			"image": "chest_frumious_vest.jpg",
@@ -1665,6 +1815,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter"	
+			],
 			"icon": "icon_legs_frumious_strides.png",
 			"image": "legs_frumious_strides.jpg",
 			"background": "legs_frumious_strides_no_hud.jpg"
@@ -1679,6 +1832,9 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"hunter"	
 			],
 			"icon": "icon_class_frumious_cloak.png",
 			"image": "class_frumious_cloak.jpg",
@@ -1702,6 +1858,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"strike"
+			],
 			"icon": "icon_helmet_took_offense.png",
 			"image": "helmet_took_offense.jpg",
 			"background": "helmet_took_offense_no_hud.jpg"
@@ -1722,6 +1882,10 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"strike"
 			],
 			"icon": "icon_gauntlets_took_offense.png",
 			"image": "gauntlets_took_offense.jpg",
@@ -1744,6 +1908,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"strike"
+			],
 			"icon": "icon_chest_took_offense.png",
 			"image": "chest_took_offense.jpg",
 			"background": "chest_took_offense_no_hud.jpg"
@@ -1765,6 +1933,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"strike"
+			],
 			"icon": "icon_legs_took_offense.png",
 			"image": "legs_took_offense.jpg",
 			"background": "legs_took_offense_no_hud.jpg"
@@ -1779,6 +1951,10 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"strike"
 			],
 			"icon": "icon_class_took_offense.png",
 			"image": "class_took_offense.jpg",
@@ -1802,11 +1978,34 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"crucible"
+			],
 			"icon": "icon_helmet_swordflight_41.png",
 			"image": "helmet_swordflight_41.jpg",
 			"background": "helmet_swordflight_41_no_hud.jpg"
 		},
-		
+		"gauntlets_swordflight_41": {
+			"id": "gauntlets_swordflight_41",
+			"name": "Swordflight 4.1",
+			"description": "Fly faster. Cut deeper. Burn harder.",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"crucible"
+			],
+			"icon": "icon_gauntlets_swordflight_41.png",
+			"image": "gauntlets_swordflight_41.jpg",
+			"background": "gauntlets_swordflight_41_no_hud.jpg"
+		},
 		"chest_swordflight_41": {
 			"id": "chest_swordflight_41",
 			"name": "Swordflight 4.1",
@@ -1823,6 +2022,10 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"crucible"
 			],
 			"icon": "icon_chest_swordflight_41.png",
 			"image": "chest_swordflight_41.jpg",
@@ -1845,6 +2048,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"hunter",
+				"crucible"
+			],
 			"icon": "icon_legs_swordflight_41.png",
 			"image": "legs_swordflight_41.jpg",
 			"background": "legs_swordflight_41_no_hud.jpg"
@@ -1859,6 +2066,10 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"hunter",
+				"crucible"
 			],
 			"icon": "icon_class_binary_phoenix_cloak.png",
 			"image": "class_binary_phoenix_cloak.jpg",
@@ -1882,6 +2093,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_helmet_noble_constant_type_2.png",
 			"image": "helmet_noble_constant_type_2.jpg",
 			"background": "helmet_noble_constant_type_2_no_hud.jpg"
@@ -1902,6 +2116,9 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"titan"
 			],
 			"icon": "icon_gauntlets_noble_constant_type_2.png",
 			"image": "gauntlets_noble_constant_type_2.jpg",
@@ -1924,6 +2141,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_chest_noble_constant_type_2.png",
 			"image": "chest_noble_constant_type_2.jpg",
 			"background": "chest_noble_constant_type_2_no_hud.jpg"
@@ -1945,6 +2165,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_legs_noble_constant_type_2.png",
 			"image": "legs_noble_constant_type_2.jpg",
 			"background": "legs_noble_constant_type_2_no_hud.jpg"
@@ -1960,9 +2183,222 @@
 				"infuse",
 				"shader_default"
 			],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_class_noble_constant_mark.png",
 			"image": "class_noble_constant_mark.jpg",
 			"background": "class_noble_constant_mark_no_hud.jpg"
+		},
+		
+		"helmet_shelter_in_place": {
+			"id": "helmet_shelter_in_place",
+			"name": "The Shelter in Place",
+			"description": "\"Where is your home? That is where you will fight the hardest.\" \u2013Zavala",
+			"type": "Helmet",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"strike"
+			],
+			"icon": "icon_helmet_shelter_in_place.png",
+			"image": "helmet_shelter_in_place.jpg",
+			"background": "helmet_shelter_in_place_no_hud.jpg"
+		},
+		"gauntlets_shelter_in_place": {
+			"id": "gauntlets_shelter_in_place",
+			"name": "The Shelter in Place",
+			"description": "Some armor doesn't protect you so much as just make the dying slower.",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"strike"
+			],
+			"icon": "icon_gauntlets_shelter_in_place.png",
+			"image": "gauntlets_shelter_in_place.jpg",
+			"background": "gauntlets_shelter_in_place_no_hud.jpg"
+		},
+		"chest_shelter_in_place": {
+			"id": "chest_shelter_in_place",
+			"name": "The Shelter in Place",
+			"description": "This armor won't stop a Cabal round, but it'll buy you some time before you die.",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"strike"
+			],
+			"icon": "icon_chest_shelter_in_place.png",
+			"image": "chest_shelter_in_place.jpg",
+			"background": "chest_shelter_in_place_no_hud.jpg"
+		},
+		"legs_shelter_in_place": {
+			"id": "legs_shelter_in_place",
+			"name": "The Shelter in Place",
+			"description": "\"That each of us have many lives to give for the City is the Traveler's greatest gift.\" \u2013Zavala",
+			"type": "Leg Armor",
+			"rarity": "Legendary",
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"strike"
+			],
+			"icon": "icon_legs_shelter_in_place.png",
+			"image": "legs_shelter_in_place_popup.jpg",
+			"background": "legs_shelter_in_place_no_hud.jpg"
+		},
+		"class_mark_of_shelter": {
+			"id": "class_mark_of_shelter",
+			"name": "Mark of Shelter",
+			"description": "Titans are both the shelter and the storm.",
+			"type": "Titan Mark",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"strike"
+			],
+			"icon": "icon_class_mark_of_shelter.png",
+			"image": "class_mark_of_shelter.jpg",
+			"background": "class_mark_of_shelter_no_hud.jpg"
+		},
+		
+		"helmet_phoenix_strife_type_0": {
+			"id": "helmet_phoenix_strife_type_0",
+			"name": "Phoenix Strife Type 0",
+			"description": "",
+			"type": "Helmet",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
+			],
+			"icon": "icon_helmet_phoenix_strife_type_0.png",
+			"image": "helmet_phoenix_strife_type_0.jpg",
+			"background": "helmet_phoenix_strife_type_0_no_hud.jpg"
+		},
+		"gauntlets_phoenix_strife_type_0": {
+			"id": "gauntlets_phoenix_strife_type_0",
+			"name": "Phoenix Strife Type 0",
+			"description": "",
+			"type": "Gauntlets",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
+			],
+			"icon": "icon_gauntlets_phoenix_strife_type_0.png",
+			"image": "gauntlets_phoenix_strife_type_0.jpg",
+			"background": "gauntlets_phoenix_strife_type_0_no_hud.jpg"
+		},
+		"chest_phoenix_strife_type_0": {
+			"id": "chest_phoenix_strife_type_0",
+			"name": "Phoenix Strife Type 0",
+			"description": "",
+			"type": "Chest Armor",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
+			],
+			"icon": "icon_chest_phoenix_strife_type_0.png",
+			"image": "chest_phoenix_strife_type_0.jpg",
+			"background": "chest_phoenix_strife_type_0_no_hud.jpg"
+		},
+		"legs_phoenix_strife_type_0": {
+			"id": "legs_phoenix_strife_type_0",
+			"name": "Phoenix Strife Type 0",
+			"description": "",
+			"type": "Leg Armor",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"empty_socket",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
+			],
+			"icon": "icon_legs_phoenix_strife_type_0.png",
+			"image": "legs_phoenix_strife_type_0.jpg",
+			"background": "legs_phoenix_strife_type_0_no_hud.jpg"
+		},
+		"class_binary_phoenix_mark": {
+			"id": "class_binary_phoenix_mark",
+			"name": "Binary Phoenix Mark",
+			"description": "",
+			"type": "Titan Mark",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"crucible"
+			],
+			"icon": "icon_class_binary_phoenix_mark.png",
+			"image": "class_binary_phoenix_mark.jpg",
+			"background": "class_binary_phoenix_mark_no_hud.jpg"
 		},
 		
 		"helmet_ego_talon_iv": {
@@ -1981,6 +2417,9 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"warlock"
 			],
 			"icon": "icon_helmet_ego_talon_iv.png",
 			"image": "helmet_ego_talon_iv.jpg",
@@ -2004,6 +2443,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock"
+			],
 			"icon": "icon_gauntlets_ego_talon_iv.png",
 			"image": "gauntlets_ego_talon_iv.jpg",
 			"background": "gauntlets_ego_talon_iv_no_hud.jpg"
@@ -2024,6 +2466,9 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"warlock"
 			],
 			"icon": "icon_chest_ego_talon_iv.png",
 			"image": "chest_ego_talon_iv.jpg",
@@ -2046,6 +2491,9 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock"
+			],
 			"icon": "icon_legs_ego_talon_iv.png",
 			"image": "legs_ego_talon_iv.jpg",
 			"background": "legs_ego_talon_iv_no_hud.jpg"
@@ -2060,6 +2508,9 @@
 			"mods": [
 				"infuse",
 				"shader_default"
+			],
+			"sources": [
+				"warlock"
 			],
 			"icon": "icon_class_ego_talon_bond.png",
 			"image": "class_ego_talon_bond.jpg",
@@ -2083,6 +2534,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"strike"
+			],
 			"icon": "icon_helmet_xenos_vale_iv.png",
 			"image": "helmet_xenos_vale_iv.jpg",
 			"background": "helmet_xenos_vale_iv_no_hud.jpg"
@@ -2105,6 +2560,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"strike"
+			],
 			"icon": "icon_gauntlets_xenos_vale_iv.png",
 			"image": "gauntlets_xenos_vale_iv.jpg",
 			"background": "gauntlets_xenos_vale_iv_no_hud.jpg"
@@ -2125,6 +2584,10 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"warlock",
+				"strike"
 			],
 			"icon": "icon_chest_xenos_vale_iv.png",
 			"image": "chest_xenos_vale_iv.jpg",
@@ -2147,9 +2610,32 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"strike"
+			],
 			"icon": "icon_legs_xenos_vale_iv.png",
 			"image": "legs_xenos_vale_iv.jpg",
 			"background": "legs_xenos_vale_iv_no_hud.jpg"
+		},
+		"class_xenos_vale_bond": {
+			"id": "class_xenos_vale_bond",
+			"name": "Xenos Vale Bond",
+			"description": "New things are only strange until you behold them. Then they are even stranger.",
+			"type": "Warlock Bond",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"infuse",
+				"shader_default"
+			],
+			"sources": [
+				"warlock",
+				"strike"
+			],
+			"icon": "icon_class_xenos_vale_bond.png",
+			"image": "class_xenos_vale_bond.jpg",
+			"background": "class_xenos_vale_bond_no_hud.jpg"
 		},
 		
 		"helmet_ankaa_seeker_iv": {
@@ -2168,6 +2654,10 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"warlock",
+				"crucible"
 			],
 			"icon": "icon_helmet_ankaa_seeker_iv.png",
 			"image": "helmet_ankaa_seeker_iv_popup.jpg",
@@ -2191,6 +2681,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"crucible"
+			],
 			"icon": "icon_gauntlets_ankaa_seeker_iv.png",
 			"image": "gauntlets_ankaa_seeker_iv_popup.jpg",
 			"background": "gauntlets_ankaa_seeker_iv_no_hud.jpg"
@@ -2211,6 +2705,10 @@
 				"infuse",
 				"empty_socket",
 				"shader_default"
+			],
+			"sources": [
+				"warlock",
+				"crucible"
 			],
 			"icon": "icon_chest_ankaa_seeker_iv.png",
 			"image": "chest_ankaa_seeker_iv.jpg",
@@ -2233,6 +2731,10 @@
 				"empty_socket",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"crucible"
+			],
 			"icon": "icon_legs_ankaa_seeker_iv.png",
 			"image": "legs_ankaa_seeker_iv_popup.jpg",
 			"background": "legs_ankaa_seeker_iv_no_hud.jpg"
@@ -2248,9 +2750,36 @@
 				"infuse",
 				"shader_default"
 			],
+			"sources": [
+				"warlock",
+				"crucible"
+			],
 			"icon": "icon_class_binary_phoenix_bond.png",
 			"image": "class_binary_phoenix_bond.jpg",
 			"background": "class_binary_phoenix_bond_no_hud.jpg"
+		},
+		
+		"last_city_shell": {
+			"id": "last_city_shell",
+			"name": "Last City Shell",
+			"description": "For Ghosts who call the Last City home.",
+			"type": "Ghost",
+			"rarity": "Legendary",
+			"perks": [
+				"random_mod",
+				"random_mod"
+			],
+			"mods": [
+				"shader_default"
+			],
+			"sources": [
+				"titan",
+				"hunter",
+				"warlock"
+			],
+			"icon": "icon_ghost_last_city_shell.png",
+			"image": "ghost_last_city_shell.jpg",
+			"background": "ghost_last_city_shell_no_hud.jpg"
 		},
 		
 		"helios_strain": {
@@ -2261,26 +2790,53 @@
 			"rarity": "Legendary",
 			"perks": [],
 			"mods": [
-				"shader_tarnished_copper"
+				"shader_tarnished_copper",
+				"shader_suros_modular_shine",
+				"shader_hakke_history_polish"
+			],
+			"sources": [
+				"hunter"
 			],
 			"icon": "icon_ship_helios_strain.png",
-			"image": "ship_helios_strain.jpg",
-			"background": "ship_helios_strain_no_hud.jpg"
+			"image": "ship_helios_strain_tarnished_copper.jpg",
+			"background": "ship_helios_strain_tarnished_copper_no_hud.jpg"
 		},
-		"captain_nemo": {
-			"id": "captain_nemo",
-			"name": "Captain Nemo",
-			"description": "Nobody ventured farther.",
+		"imprint": {
+			"id": "imprint",
+			"name": "Imprint",
+			"description": "A Vector-class refit with experimental subspace engines.",
 			"type": "Ship",
 			"rarity": "Legendary",
 			"perks": [],
 			"mods": [
-				"shader_cerulean_divide"
+				"shader_suros_modular_shine",
+				"shader_bumblebee"
 			],
-			"icon": "icon_ship_captain_nemo.png",
-			"image": "ship_captain_nemo.jpg",
-			"background": "ship_captain_nemo_no_hud.jpg"
+			"sources": [
+				"hunter"
+			],
+			"icon": "icon_ship_imprint.png",
+			"image": "ship_imprint_suros_modular_shine.jpg",
+			"background": "ship_imprint_suros_modular_shine_no_hud.jpg"
 		},
+		"alessa": {
+			"id": "alessa",
+			"name": "Alessa",
+			"description": "Defend every corner.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_bumblebee"
+			],
+			"sources": [
+				"hunter"
+			],
+			"icon": "icon_ship_alessa.png",
+			"image": "ship_alessa_bumblebee.jpg",
+			"background": "ship_alessa_bumblebee_no_hud.jpg"
+		},
+		
 		"meridian_sv": {
 			"id": "meridian_sv",
 			"name": "Meridian SV",
@@ -2289,11 +2845,103 @@
 			"rarity": "Legendary",
 			"perks": [],
 			"mods": [
-				"shader_hakke_history_polish"
+				"shader_hakke_history_polish",
+				"shader_xenosilver"
+			],
+			"sources": [
+				"titan"
 			],
 			"icon": "icon_ship_meridian_sv.png",
-			"image": "ship_meridian_sv.jpg",
-			"background": "ship_meridian_sv_no_hud.jpg"
+			"image": "ship_meridian_sv_hakke_history_polish.jpg",
+			"background": "ship_meridian_sv_hakke_history_polish_no_hud.jpg"
+		},
+		"eos_raptor": {
+			"id": "eos_raptor",
+			"name": "Eos Raptor",
+			"description": "A Minerva-class refit commemorating the legendary Warlock Tinasha-3, known to her peers in the Iron Banner as Ashraven.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_hakke_history_polish"
+			],
+			"sources": [
+				"titan"
+			],
+			"icon": "icon_ship_eos_raptor.png",
+			"image": "ship_eos_raptor_hakke_history_polish.jpg",
+			"background": "ship_eos_raptor_hakke_history_polish_no_hud.jpg"
+		},
+		"leonid_mv": {
+			"id": "leonid_mv",
+			"name": "Leonid MV",
+			"description": "Minerva-class refit. Break any storm that finds you..",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_xenosilver"
+			],
+			"sources": [
+				"titant"
+			],
+			"icon": "icon_ship_leonid_mv.png",
+			"image": "ship_leonid_mv_xenosilver.jpg",
+			"background": "ship_leonid_mv_xenosilver_no_hud.jpg"
+		},
+		
+		"captain_nemo": {
+			"id": "captain_nemo",
+			"name": "Captain Nemo",
+			"description": "Nobody ventured farther.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_cerulean_divide",
+				"shader_nebula_rose"
+			],
+			"sources": [
+				"warlock"
+			],
+			"icon": "icon_ship_captain_nemo.png",
+			"image": "ship_captain_nemo_cerulean_divide.jpg",
+			"background": "ship_captain_nemo_cerulean_divide_no_hud.jpg"
+		},
+		"dead_fall": {
+			"id": "dead_fall",
+			"name": "Dead Fall",
+			"description": "Nobody ventured farther.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_nebula_rose"
+			],
+			"sources": [
+				"warlock"
+			],
+			"icon": "icon_ship_dead_fall.png",
+			"image": "ship_dead_fall_nebula_rose.jpg",
+			"background": "ship_dead_fall_nebula_rose_no_hud.jpg"
+		},
+		"sojourner": {
+			"id": "sojourner",
+			"name": "Sojourner",
+			"description": "Retrofitted Nautilus-class for long jaunts from Earth... or farther, if you decide to never come home again.",
+			"type": "Ship",
+			"rarity": "Legendary",
+			"perks": [],
+			"mods": [
+				"shader_cerulean_divide",
+				"shader_nebula_rose"
+			],
+			"sources": [
+				"warlock"
+			],
+			"icon": "icon_ship_sojourner.png",
+			"image": "ship_sojourner_cerulean_divide.jpg",
+			"background": "ship_sojourner_cerulean_divide_no_hud.jpg"
 		},
 		
 		"emblem_titans_pride": {
@@ -2304,6 +2952,9 @@
 			"rarity": "Common",
 			"perks": [],
 			"mods": [],
+			"sources": [
+				"titan"
+			],
 			"icon": "icon_emblem_titans_pride.png"
 		},
 		"emblem_hunters_wit": {
@@ -2314,6 +2965,9 @@
 			"rarity": "Common",
 			"perks": [],
 			"mods": [],
+			"sources": [
+				"hunter"
+			],
 			"icon": "icon_emblem_hunters_wit.png"
 		},
 		"emblem_warlocks_flight": {
@@ -2324,6 +2978,9 @@
 			"rarity": "Common",
 			"perks": [],
 			"mods": [],
+			"sources": [
+				"warlock"
+			],
 			"icon": "icon_emblem_warlocks_flight.png"
 		},
 		
@@ -2335,6 +2992,11 @@
 			"rarity": "Uncommon",
 			"perks": [],
 			"mods": [],
+			"sources": [
+				"titan",
+				"hunter",
+				"warlock"
+			],
 			"icon": "icon_emote_point.png"
 		}
 	}
