@@ -788,6 +788,14 @@
 			"type": "Intrinsic",
 			"icon": "perk_heavy_titan_armor.png"
 		},
+		"restorative_titan_armor": {
+			"id": "restorative_titan_armor",
+			"name": "Restorative Titan Armor",
+			"description": "Improved recovery with a balance of mobility and resilience.",
+			"description_list": [],
+			"type": "Intrinsic",
+			"icon": "perk_restorative_titan_armor.png"
+		},
 		"full_auto_trigger_system": {
 			"id": "full_auto_trigger_system",
 			"name": "Full Auto Trigger System",
@@ -1124,7 +1132,8 @@
 			],
 			"sources": [
 				"titan",
-				"hunter"
+				"hunter",
+				"strike"
 			],
 			"icon": "icon_smg_showrunner.png",
 			"image": "smg_showrunner.jpg",
@@ -1517,7 +1526,8 @@
 				"shader_default"
 			],
 			"sources": [
-				"titan"
+				"titan",
+				"crucible"
 			],
 			"icon": "icon_pistol_minuet_42.png",
 			"image": "pistol_minuet_42.jpg",
@@ -1720,6 +1730,10 @@
 				"infuse",
 				"arc_damage",
 				"shader_default"
+			],
+			"sources": [
+				"strike",
+				"crucible"
 			],
 			"icon": "icon_rocket_morrigan_d.png",
 			"image": "rocket_morrigan_d.jpg",
@@ -2003,7 +2017,7 @@
 				"crucible"
 			],
 			"icon": "icon_gauntlets_swordflight_41.png",
-			"image": "gauntlets_swordflight_41.jpg",
+			"image": "gauntlets_swordflight_41_inspect.jpg",
 			"background": "gauntlets_swordflight_41_no_hud.jpg"
 		},
 		"chest_swordflight_41": {
@@ -2222,7 +2236,12 @@
 			"description": "Some armor doesn't protect you so much as just make the dying slower.",
 			"type": "Gauntlets",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2233,7 +2252,7 @@
 				"strike"
 			],
 			"icon": "icon_gauntlets_shelter_in_place.png",
-			"image": "gauntlets_shelter_in_place.jpg",
+			"image": "gauntlets_shelter_in_place_inspect.jpg",
 			"background": "gauntlets_shelter_in_place_no_hud.jpg"
 		},
 		"chest_shelter_in_place": {
@@ -2242,7 +2261,12 @@
 			"description": "This armor won't stop a Cabal round, but it'll buy you some time before you die.",
 			"type": "Chest Armor",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"heavy_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2253,7 +2277,7 @@
 				"strike"
 			],
 			"icon": "icon_chest_shelter_in_place.png",
-			"image": "chest_shelter_in_place.jpg",
+			"image": "chest_shelter_in_place_inspect.jpg",
 			"background": "chest_shelter_in_place_no_hud.jpg"
 		},
 		"legs_shelter_in_place": {
@@ -2278,7 +2302,7 @@
 				"strike"
 			],
 			"icon": "icon_legs_shelter_in_place.png",
-			"image": "legs_shelter_in_place_popup.jpg",
+			"image": "legs_shelter_in_place.jpg",
 			"background": "legs_shelter_in_place_no_hud.jpg"
 		},
 		"class_mark_of_shelter": {
@@ -2304,10 +2328,15 @@
 		"helmet_phoenix_strife_type_0": {
 			"id": "helmet_phoenix_strife_type_0",
 			"name": "Phoenix Strife Type 0",
-			"description": "",
+			"description": "\"The greatest compliment you can pay in the Crucible is to fight with everything you've got.\" \u2013Lord Shaxx",
 			"type": "Helmet",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"restorative_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2324,10 +2353,14 @@
 		"gauntlets_phoenix_strife_type_0": {
 			"id": "gauntlets_phoenix_strife_type_0",
 			"name": "Phoenix Strife Type 0",
-			"description": "",
+			"description": "\"Mercy has no place in the Crucible. Going easy does no one any favors.\" \u2013Lord Shaxx",
 			"type": "Gauntlets",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"restorative_titan_armor",
+				"mobility_mod",
+				"resilience_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2344,10 +2377,15 @@
 		"chest_phoenix_strife_type_0": {
 			"id": "chest_phoenix_strife_type_0",
 			"name": "Phoenix Strife Type 0",
-			"description": "",
+			"description": "Never stop striving.",
 			"type": "Chest Armor",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"restorative_titan_armor",
+				
+				"mobility_mod",
+				"restorative_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2364,10 +2402,15 @@
 		"legs_phoenix_strife_type_0": {
 			"id": "legs_phoenix_strife_type_0",
 			"name": "Phoenix Strife Type 0",
-			"description": "",
+			"description": "\"Fight harder! Any less than your best is an insult to the very core of being a Guardian!\" \u2013Lord Shaxx",
 			"type": "Leg Armor",
 			"rarity": "Legendary",
-			"perks": [],
+			"perks": [
+				"restorative_titan_armor",
+				
+				"mobility_mod",
+				"resilience_mod"
+			],
 			"mods": [
 				"infuse",
 				"empty_socket",
@@ -2384,7 +2427,7 @@
 		"class_binary_phoenix_mark": {
 			"id": "class_binary_phoenix_mark",
 			"name": "Binary Phoenix Mark",
-			"description": "",
+			"description": "The phoenix that fights itself, then rises from its ashes stronger than ever. That is the Crucible.",
 			"type": "Titan Mark",
 			"rarity": "Legendary",
 			"perks": [],
@@ -2792,7 +2835,8 @@
 			"mods": [
 				"shader_tarnished_copper",
 				"shader_suros_modular_shine",
-				"shader_hakke_history_polish"
+				"shader_hakke_history_polish",
+				"shader_bumblebee"
 			],
 			"sources": [
 				"hunter"
@@ -2916,7 +2960,8 @@
 			"rarity": "Legendary",
 			"perks": [],
 			"mods": [
-				"shader_nebula_rose"
+				"shader_nebula_rose",
+				"shader_cerulean_divide"
 			],
 			"sources": [
 				"warlock"
