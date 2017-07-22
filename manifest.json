@@ -1073,6 +1073,14 @@
 			"action": "Shader",
 			"rarity": "Legendary",
 			"icon": "mod_shader_bumblebee.png"
+		},
+		"shader_veist_poison_shimmer": {
+			"id": "shader_veist_poison_shimmer",
+			"name": "Veist Posion Shimmer",
+			"description": "Equip this shader to change the color of your gear.",
+			"action": "Shader",
+			"rarity": "Legendary",
+			"icon": "mod_shader_veist_poison_shimmer.png"
 		}
 	},
 	"items": {
@@ -1558,7 +1566,8 @@
 				"shader_default"
 			],
 			"sources": [
-				"titan"
+				"titan",
+				"strike"
 			],
 			"icon": "icon_shotgun_retrofuturist.png",
 			"image": "shotgun_retrofuturist.jpg",
@@ -2854,7 +2863,8 @@
 			"perks": [],
 			"mods": [
 				"shader_suros_modular_shine",
-				"shader_bumblebee"
+				"shader_bumblebee",
+				"shader_tarnished_copper"
 			],
 			"sources": [
 				"hunter"
@@ -2871,7 +2881,8 @@
 			"rarity": "Legendary",
 			"perks": [],
 			"mods": [
-				"shader_bumblebee"
+				"shader_bumblebee",
+				"shader_tarnished_copper"
 			],
 			"sources": [
 				"hunter"
@@ -2961,7 +2972,8 @@
 			"perks": [],
 			"mods": [
 				"shader_nebula_rose",
-				"shader_cerulean_divide"
+				"shader_cerulean_divide",
+				"shader_veist_poison_shimmer"
 			],
 			"sources": [
 				"warlock"
@@ -3043,6 +3055,573 @@
 				"warlock"
 			],
 			"icon": "icon_emote_point.png"
+		}
+	},
+	"enemyRaces": {
+		"cabal": {
+			"id": "cabal",
+			"name": "Cabal",
+			"factions": {
+				"red_legion": {
+					"id": "red_legion",
+					"name": "Red Legion"
+				}
+			},
+			"symbol": "symbol_cabal.svg"
+		},
+		"vex": {
+			"id": "vex",
+			"name": "Vex",
+			"factions": {
+				"vex": {
+					"id": "vex",
+					"name": "Vex"
+				}
+			},
+			"symbol": "symbol_vex.svg"
+		},
+		"fallen": {
+			"id": "fallen",
+			"name": "Fallen",
+			"factions": {
+				"vex": {
+					"id": "unknown",
+					"name": "Unknown Faction"
+				}
+			},
+			"symbol": "symbol_fallen.svg"
+		}
+	},
+	"enemyWeapons": {
+		"cabal_slug_shotgun": {
+			"id": "cabal_slug_shotgun",
+			"name": "Cabal Slug Shotgun",
+			"damageType": "Void",
+			"enemyRace": "cabal"
+		},
+		"projection_rifle": {
+			"id": "projection_rifle",
+			"name": "Projection Rifle",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_bronto_cannon": {
+			"id": "cabal_bronto_cannon",
+			"name": "Cabal Bronto Cannon",
+			"damageType": "Void",
+			"enemyRace": "cabal"
+		},
+		"cabal_cluster_missile": {
+			"id": "cabal_cluster_missile",
+			"name": "Cabal Cluster Missle",
+			"damageType": "Arc",
+			"enemyRace": "cabal"
+		},
+		"cabal_slug_launcher": {
+			"id": "cabal_slug_launcher",
+			"name": "Cabal Slug Launcher",
+			"damageType": "Arc",
+			"enemyRace": "cabal"
+		},
+		"cabal_severus": {
+			"id": "cabal_severus",
+			"name": "Cabal Severus",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_magma_launcher": {
+			"id": "cabal_magma_launcher",
+			"name": "Cabal Magma Launcher",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_magma_burn": {
+			"id": "cabal_magma_burn",
+			"name": "Cabal Magma Burn",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_magma_malfunction": {
+			"id": "cabal_magma_malfunction",
+			"name": "Cabal Magma Malfunction",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"slug_rifle": {
+			"id": "slug_rifle",
+			"name": "Cabal Slug Rifle",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_melee": {
+			"id": "cabal_melee",
+			"name": "Cabal Melee",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"cabal_melee_void": {
+			"id": "cabal_melee_void",
+			"name": "Cabal Melee",
+			"damageType": "Void",
+			"enemyRace": "cabal"
+		},
+		"cabal_headhunter": {
+			"id": "cabal_headhunter",
+			"name": "Cabal Headhunter",
+			"damageType": "Solar",
+			"enemyRace": "cabal"
+		},
+		"psionic_blast": {
+			"id": "psionic_blast",
+			"name": "Psionic Blast",
+			"damageType": "Void",
+			"enemyRace": "cabal"
+		},
+		"cabal_claws_melee": {
+			"id": "cabal_claws_melee",
+			"name": "Cabal Claws Melee",
+			"damageType": "Kinetic",
+			"enemyRace": "cabal"
+		},
+		
+		"slap_rifle": {
+			"id": "slap_rifle",
+			"name": "Slap Rifle",
+			"damageType": "Solar",
+			"enemyRace": "vex"
+		},
+		"slap_rifle_arc": {
+			"id": "slap_rifle_arc",
+			"name": "Slap Rifle",
+			"damageType": "Arc",
+			"enemyRace": "vex"
+		},
+		
+		"vex_laser_rifle": {
+			"id": "vex_laser_rifle",
+			"name": "Vex Laser Rifle",
+			"damageType": "Void",
+			"enemyRace": "vex"
+		},
+		"line_rifle": {
+			"id": "line_rifle",
+			"name": "Line Rifle",
+			"damageType": "Solar",
+			"enemyRace": "vex"
+		},
+		"detonation": {
+			"id": "detonation",
+			"name": "Detonation",
+			"damageType": "Solar",
+			"enemyRace": "vex"
+		},
+		"torch_hammer": {
+			"id": "torch_hammer",
+			"name": "Torch Hammer",
+			"damageType": "Void",
+			"enemyRace": "vex"
+		},
+		
+		"shrapnel_launcher": {
+			"id": "shrapnel_launcher",
+			"name": "Shrapnel Launcher",
+			"damageType": "Solar",
+			"enemyRace": "fallen"
+		},
+		"fallen_molten_welder": {
+			"id": "fallen_molten_welder",
+			"name": "Fallen Molten Welder",
+			"damageType": "Solar",
+			"enemyRace": "fallen"
+		},
+		"melee": {
+			"id": "melee",
+			"name": "Melee",
+			"damageType": "Kinetic"
+		},
+		"melee_solar": {
+			"id": "melee_solar",
+			"name": "Melee",
+			"damageType": "Solar"
+		},
+		"melee_arc": {
+			"id": "melee_arc",
+			"name": "Melee",
+			"damageType": "Arc"
+		},
+		"melee_void": {
+			"id": "melee_void",
+			"name": "Melee",
+			"damageType": "Void"
+		},
+		
+		"pike": {
+			"id": "pike",
+			"name": "Pike",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
+		},
+		
+		"thresher": {
+			"id": "thresher",
+			"name": "Thresher",
+			"enemyRace": "cabal"
+		},
+		
+		"servitor_eye": {
+			"id": "servitor_eye",
+			"name": "Servitor Eye",
+			"enemyRace": "fallen",
+			"damageType": "Void"
+		},
+		"shank_turret": {
+			"id": "shank_turret",
+			"name": "Shank Turret",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
+		},
+		"wire_rifle": {
+			"id": "wire_rifle",
+			"name": "Wire Rifle",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
+		}
+	},
+	"enemyTypes": {
+		"centurion": {
+			"id": "centurion",
+			"name": "Centurion",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_melee_void",
+				"cabal_slug_shotgun",
+				"projection_rifle",
+				"cabal_bronto_cannon"
+			],
+			"shield": "Solar"
+		},
+		"centurion_honored": {
+			"id": "centurion_honored",
+			"name": "Honored Centurion",
+			"parent": "centurion",
+			"tier": 2
+		},
+		"centurion_impact": {
+			"id": "centurion_impact",
+			"name": "Impact Centurion",
+			"parent": "centurion",
+			"tier": 3
+		},
+		"centurion_blood": {
+			"id": "centurion_blood",
+			"name": "Blood Guard Centurion",
+			"parent": "centurion",
+			"tier": 3,
+			"shield": "Void"
+		},
+		"brann_the_unbent_blade": {
+			"id": "brann_the_unbent_blade",
+			"name": "Brann, the Unbent Blade",
+			"parent": "centurion",
+			"tier": 4,
+			"weapons": [
+				"cabal_bronto_cannon"
+			]
+		},
+		
+		"colossus": {
+			"id": "colossus",
+			"name": "Colossus",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_cluster_missile",
+				"cabal_slug_launcher"
+			]
+		},
+		
+		"gladiator": {
+			"id": "gladiator",
+			"name": "Gladiator",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_severus"
+			]
+		},
+		
+		"incendior": {
+			"id": "incendior",
+			"name": "Incendior",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_magma_burn",
+				"cabal_magma_launcher",
+				"cabal_magma_malfunction"
+			]
+		},
+		"incendior_blood": {
+			"id": "incendior_blood",
+			"name": "Blood Guard Incendior",
+			"parent": "incendior",
+			"tier": 3,
+			"shield": "Solar"
+		},
+		"pashk_the_searing_will": {
+			"id": "pashk_the_searing_will",
+			"name": "Pashk, the Searing Will",
+			"parent": "incendior_blood"
+		},
+		
+		"legionary": {
+			"id": "legionary",
+			"name": "Legionary",
+			"enemyRace": "cabal",
+			"weapons": [
+				"slug_rifle",
+				"cabal_melee"
+			]
+		},
+		"legionary_honored": {
+			"id": "legionary_honored",
+			"name": "Honored Legionary",
+			"parent": "legionary",
+			"tier": 2
+		},
+		"legionary_blood": {
+			"id": "legionary_blood",
+			"name": "Blood Guard Legionary",
+			"parent": "legionary",
+			"tier": 3,
+			"shield": "Arc"
+		},
+		"kreth_the_living_skyfire": {
+			"id": "kreth_the_living_skyfire",
+			"name": "Kreth the Living Skyfire",
+			"parent": "legionary_blood",
+			"tier": 3
+		},
+		
+		"phalanx": {
+			"id": "phalanx",
+			"name": "Phalanx",
+			"enemyRace": "cabal",
+			"weapons": [
+				"slug_rifle"
+			]
+		},
+		
+		"psion": {
+			"id": "psion",
+			"name": "Psion",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_headhunter",
+				"psionic_blast",
+				"slug_rifle"
+			]
+		},
+		"interceptor_pilot": {
+			"id": "interceptor_pilot",
+			"name": "Interceptor Pilot",
+			"parent": "psion",
+			"shield": "Void"
+		},
+		
+		"war_beast": {
+			"id": "war_beast",
+			"name": "War Beast",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_claws_melee"
+			]
+		},
+		
+		"goblin": {
+			"id": "goblin",
+			"name": "Goblin",
+			"enemyRace": "vex",
+			"weapons": [
+				"melee_void",
+				"slap_rifle"
+			]
+		},
+		"fanatic": {
+			"id": "fanatic",
+			"name": "Fanatic",
+			"parent": "goblin",
+			"weapons": [
+				"slap_rifle",
+				"detonation"
+			]
+		},
+		
+		"harpy": {
+			"id": "harpy",
+			"name": "Harpy",
+			"enemyRace": "vex",
+			"weapons": [
+				"vex_laser_rifle"
+			]
+		},
+		
+		"hobgoblin": {
+			"id": "hobgoblin",
+			"name": "Hobgoblin",
+			"enemyRace": "vex",
+			"weapons": [
+				"line_rifle"
+			]
+		},
+		"hobgoblin_quantum": {
+			"id": "hobgoblin_quantum",
+			"name": "Quantum Hobgoblin",
+			"parent": "hobgoblin",
+			"tier": 2,
+			"weapons": [
+				"line_rifle",
+				"vex_laser_rifle"
+			]
+		},
+		
+		"minotaur": {
+			"id": "minotaur",
+			"name": "Minotaur",
+			"enemyRace": "vex",
+			"weapons": [
+				"torch_hammer"
+			],
+			"shield": "Void"
+		},
+		"minotaur_quantum": {
+			"id": "minotaur_quantum",
+			"name": "Quantum Minotaur",
+			"parent": "minotaur",
+			"tier": 2,
+			"weapons": [
+				"vex_laser_rifle"
+			]
+		},
+		"minotaur_storm": {
+			"id": "minotaur_storm",
+			"name": "Storm Minotaur",
+			"parent": "minotaur",
+			"tier": 3
+		},
+		"protheon_modular_mind": {
+			"id": "protheon_modular_mind",
+			"name": "Protheon, Modular Mind",
+			"parent": "minotaur",
+			"tier": 4,
+			"weapons": [
+				"slap_rifle_arc",
+				"torch_hammer"
+			],
+			"profiles": [
+				"enemy_protheon_phase_one.jpg",
+				"enemy_protheon_phase_two.jpg",
+				"enemy_protheon_phase_three.jpg"
+			]
+		},
+		
+		"captain": {
+			"id": "captain",
+			"name": "Captain",
+			"enemyRace": "fallen",
+			"weapons": [
+				"shrapnel_launcher",
+				"fallen_molten_welder",
+				"melee"
+			],
+			"shield": "Arc"
+		},
+		"captain_resilient": {
+			"id": "captain_resilient",
+			"name": "Resilient Captain",
+			"parent": "captain",
+			"tier": 2
+		},
+		
+		"marauder": {
+			"id": "marauder",
+			"name": "Marauder",
+			"enemyRace": "fallen",
+			"weapons": [
+				"shrapnel_launcher"
+			]
+		},
+		"marauder_resilient": {
+			"id": "marauder_resilient",
+			"name": "Resilient Marauder",
+			"parent": "marauder",
+			"tier": 2
+		},
+		
+		"dreg": {
+			"id": "dreg",
+			"name": "Dreg",
+			"enemyRace": "fallen",
+			"weapons": [
+				
+			]
+		},
+		"pike_dreg": {
+			"id": "pike_dreg",
+			"name": "Pike Dreg",
+			"parent": "dreg",
+			"weapons": [
+				"pike"
+			]
+		},
+		
+		"servitor": {
+			"id": "servitor",
+			"name": "Servitor",
+			"enemyRace": "fallen",
+			"weapons": [
+				"servitor_eye"
+			]
+		},
+		"servitor_unyielding": {
+			"id": "servitor_unyielding",
+			"name": "Unyielding Servitor",
+			"parent": "servitor"
+		},
+		
+		"shank": {
+			"id": "shank",
+			"name": "Shank",
+			"enemyRace": "fallen",
+			"weapons": [
+				"shank_turret"
+			]
+		},
+		"shank_resilient": {
+			"id": "shank_resilient",
+			"name": "Resilient Shank",
+			"parent": "shank",
+			"tier": 2
+		},
+		
+		"vandal": {
+			"id": "vandal",
+			"name": "Vandal",
+			"enemyRace": "fallen",
+			"weapons": [
+				"wire_rifle"
+			]
+		},
+		"wretch": {
+			"id": "wretch",
+			"name": "Wretch",
+			"enemyRace": "fallen",
+			"weapons": [
+				"melee_arc"
+			]
+		},
+		"wretch_resilient": {
+			"id": "wretch_resilient",
+			"name": "Resilient Wretch",
+			"parent": "wretch",
+			"tier": 2
 		}
 	}
 }
