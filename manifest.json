@@ -3068,11 +3068,23 @@
 			"classSkills": [
 				{
 					"name": "Marksman's Dodge",
-					"description": "Dodge ([bind]) to perform an evasive maneuver with a steady hand. Dodging automatically [s]reloads your weapon.[-s]"
+					"description": "Dodge ([bind]) to perform an evasive maneuver with a steady hand. Dodging automatically [s]reloads your weapon.[-s]",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O, O/B, B"
+						}
+					]
 				},
 				{
 					"name": "Gambler's Dodge",
-					"description": "Dodge ([bind]) to perform a deft tumble, avoiding enemy attack. Dodging near enemies fully [s]recharges your Melee Ability.[-s]"
+					"description": "Dodge ([bind]) to perform a deft tumble, avoiding enemy attack. Dodging near enemies fully [s]recharges your Melee Ability.[-s]",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O, O/B, B"
+						}
+					]
 				}
 			],
 			"movementSkills": [
@@ -3100,11 +3112,23 @@
 			"classSkills": [
 				{
 					"name": "Towering Barricade",
-					"description": "Press and Hold [bind] to create a [s]large barrier[-s] that can be used to reinforce a position with [s]cover[-s] from enemy fire."
+					"description": "Press and Hold [bind] to create a [s]large barrier[-s] that can be used to reinforce a position with [s]cover[-s] from enemy fire.",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O/B"
+						}
+					]
 				},
 				{
 					"name": "Rally Barricade",
-					"description": "Press and Hold [bind] to create a [s]small barrier[-s] that allows you to peek over it while [s]aiming[-s] down sights, and which [s]instantly reloads[-s] your equipped weapon when you take cover."
+					"description": "Press and Hold [bind] to create a [s]small barrier[-s] that allows you to peek over it while [s]aiming[-s] down sights, and which [s]instantly reloads[-s] your equipped weapon when you take cover.",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O/B"
+						}
+					]
 				}
 			],
 			"movementSkills": [
@@ -3132,11 +3156,23 @@
 			"classSkills": [
 				{
 					"name": "Healing Rift",
-					"description": "Press and Hold [bind] to conjure a well of Light that [s]continuously heals[-s] those inside it."
+					"description": "Press and Hold [bind] to conjure a well of Light that [s]continuously heals[-s] those inside it.",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O/B"
+						}
+					]
 				},
 				{
 					"name": "Empowering Rift",
-					"description": "Press and hold [bind] to conjure a well of Light that [s]increases weapon damage[-s] for those inside it."
+					"description": "Press and hold [bind] to conjure a well of Light that [s]increases weapon damage[-s] for those inside it.",
+					"bindings": [
+						{
+							"id": "bind",
+							"text": "O/B"
+						}
+					]
 				}
 			],
 			"movementSkills": [
@@ -3302,7 +3338,25 @@
 			"damageType": "Void",
 			"superAbility": {
 				"name": "Sentinel Shield",
-				"description": "Press [bind] to summon a shield of Void Light. While Sentinel Shield is active, press [bind2] to attack. Hold [bind3] to guard. Press [bind4] to perform a [s]Shield Throw.[-s]"
+				"description": "Press [bind] to summon a shield of Void Light. While Sentinel Shield is active, press [bind2] to attack. Hold [bind3] to guard. Press [bind4] to perform a [s]Shield Throw.[-s]",
+				"bindings": [
+					{
+						"id": "bind",
+						"text": "L1+R1/LB+RB"
+					},
+					{
+						"id": "bind2",
+						"text": "R1/RB"
+					},
+					{
+						"id": "bind3",
+						"text": "L2/LT"
+					},
+					{
+						"id": "bind4",
+						"text": "L1/LB"
+					}
+				]
 			},
 			"grenadeSkills": [
 				{
@@ -3336,7 +3390,13 @@
 						},
 						{
 							"name": "Ward of Dawn",
-							"description": "When Super energy is full, press and hold [bind] to create a [s]shielding dome[-s] to protect you and your allies."
+							"description": "When Super energy is full, press and hold [bind] to create a [s]shielding dome[-s] to protect you and your allies.",
+							"bindings": [
+								{
+									"id": "bind",
+									"text": "L1+R1/LB+RB"
+								}
+							]
 						}
 					]
 				},
@@ -3475,7 +3535,13 @@
 						},
 						{
 							"name": "Icarus Dash",
-							"description": "Press [bind] while midair to [s]dodge.[-s]"
+							"description": "Press [bind] while midair to [s]dodge.[-s]",
+							"bindings": [
+								{
+									"id": "bind",
+									"text": "O,O/B,B"
+								}
+							]
 						}
 					]
 				},
@@ -3496,7 +3562,13 @@
 						},
 						{
 							"name": "Phoenix Dive",
-							"description": "Hold [bind] while midair to quickly [s]descend[-s] and [s]restore your health.[-s] When [s]Daybreak[-s] is active, Descend causes [s]explosive[-s] damage."
+							"description": "Hold [bind] while midair to quickly [s]descend[-s] and [s]restore your health.[-s] When [s]Daybreak[-s] is active, Descend causes [s]explosive[-s] damage.",
+							"bindings": [
+								{
+									"id": "bind",
+									"text": "O/B"
+								}
+							]
 						}
 					]
 				}
