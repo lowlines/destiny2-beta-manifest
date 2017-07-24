@@ -3057,6 +3057,517 @@
 			"icon": "icon_emote_point.png"
 		}
 	},
+	"classes": {
+		"hunter": {
+			"id": "hunter",
+			"name": "Hunter",
+			"subclasses": [
+				"arcstrider",
+				"gunslinger"
+			],
+			"classSkills": [
+				{
+					"name": "Marksman's Dodge",
+					"description": "Dodge ([bind]) to perform an evasive maneuver with a steady hand. Dodging automatically [s]reloads your weapon.[-s]"
+				},
+				{
+					"name": "Gambler's Dodge",
+					"description": "Dodge ([bind]) to perform a deft tumble, avoiding enemy attack. Dodging near enemies fully [s]recharges your Melee Ability.[-s]"
+				}
+			],
+			"movementSkills": [
+				{
+					"name": "High Jump",
+					"description": "While airborne, jump a second time to reach [s]greater heights.[-s]"
+				},
+				{
+					"name": "Strafe Jump",
+					"description": "While airborne, jump a second time with strong [s]directional control.[-s]"
+				},
+				{
+					"name": "Triple Jump",
+					"description": "While airborne, sustain your air control with a second or [s]third jump.[-s]"
+				}
+			]
+		},
+		"titan": {
+			"id": "titan",
+			"name": "Titan",
+			"subclasses": [
+				"sentinel",
+				"striker"
+			],
+			"classSkills": [
+				{
+					"name": "Towering Barricade",
+					"description": "Press and Hold [bind] to create a [s]large barrier[-s] that can be used to reinforce a position with [s]cover[-s] from enemy fire."
+				},
+				{
+					"name": "Rally Barricade",
+					"description": "Press and Hold [bind] to create a [s]small barrier[-s] that allows you to peek over it while [s]aiming[-s] down sights, and which [s]instantly reloads[-s] your equipped weapon when you take cover."
+				}
+			],
+			"movementSkills": [
+				{
+					"name": "High Lift",
+					"description": "Jump while airborne to activate Lift and launch into the air at [s]greater heights.[-s]"
+				},
+				{
+					"name": "Strafe Lift",
+					"description": "Jump while airborne to activate Lift and launch into the air with strong [s]directional control.[-s]"
+				},
+				{
+					"name": "Catapult Lift",
+					"description": "Jump while airborne to activate Lift and launch into the air with a [s]strong initial burst[-s] of momentum."
+				}
+			]
+		},
+		"warlock": {
+			"id": "warlock",
+			"name": "Warlock",
+			"subclasses": [
+				"dawnblade",
+				"voidwalker"
+			],
+			"classSkills": [
+				{
+					"name": "Healing Rift",
+					"description": "Press and Hold [bind] to conjure a well of Light that [s]continuously heals[-s] those inside it."
+				},
+				{
+					"name": "Empowering Rift",
+					"description": "Press and hold [bind] to conjure a well of Light that [s]increases weapon damage[-s] for those inside it."
+				}
+			],
+			"movementSkills": [
+				{
+					"name": "Strafe Glide",
+					"description": "Jump while airborne to activate Glide and start and airborne drift with [s]strong directional control.[-s]"
+				},
+				{
+					"name": "Burst Glide",
+					"description": "Jump while airborne to activate Glide and start an airborne drift with a [s]strong initial boost of speed.[-s]"
+				},
+				{
+					"name": "Balanced Glide",
+					"description": "Jump while airborne to activate Glide and start an airborne drift with both [s]moderate speed and directional control.[-s]"
+				}
+			]
+		}
+	},
+	"subclasses": {
+		"arcstrider": {
+			"id": "arcstrider",
+			"name": "Arcstrider",
+			"class": "hunter",
+			"damageType": "Arc",
+			"description": "Flow like lightning. Strike like thunder.",
+			"superAbility": {
+				"name": "Arc Staff",
+				"description": "[s]Form a staff[-s] of pure [s]Arc energy[-s] and acrobatically take out your foes."
+			},
+			"grenadeSkills": [
+				{
+					"name": "Skip Grenade",
+					"description": "A grenade that [s]splits[-s] upon impact, creating [s]multiple projectiles[-s] that [s]seek[-s] enemies."
+				},
+				{
+					"name": "Flux Grenade",
+					"description": "An explosive grenade that deals [s]additional damage[-s] when [s]attached[-s] to enemies."
+				},
+				{
+					"name": "Arcbolt Grenade",
+					"description": "A grenade that [s]chains[-s] bolts of [s]lightning[-s] to nearby enemies."
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Way of the Warrior",
+					"skills": [
+						{
+							"name": "Deadly Reach",
+							"description": "[s]Dodging[-s] increases your [s]melee range[-s], allowing you to lunge further to strike enemies."
+						},
+						{
+							"name": "Combat Flow",
+							"description": "Melee kills [s]recharge[-s] your [s]dodge[-s] ability."
+						},
+						{
+							"name": "Combination Blow",
+							"description": "[s]Kill an enemy[-s] with this melee ability to trigger [s]health regeneration[-s] and increase your [s]melee damage[-s] temporarily."
+						},
+						{
+							"name": "Lethal Current",
+							"description": "After [s]dodging[-s], each Arc Staff hit creates a [s]damaging lightning aftershock.[-s]"
+						}
+					]
+				},
+				{
+					"name": "Way of the Wind",
+					"skills": [
+						{
+							"name": "Disorienting Blow",
+							"description": "[s]Strike an enemy[-s] with this melee ability to [s]disorient[-s] the target and nearby [s]enemies.[-s]"
+						},
+						{
+							"name": "Focused Breathing",
+							"description": "Sprinting [s]recharges[-s] your [s]dodge[-s] ability. Increased maximum [s]sprint speed.[-s]"
+						},
+						{
+							"name": "Combat Meditation",
+							"description": "While critically wounded, [s]melee[-s] and [s]grenades recharge[-s] drastically faster."
+						},
+						{
+							"name": "Lightning Reflexes",
+							"description": "You are [s]harder to kill[-s] while [s]dodging.[-s]"
+						}
+					]
+				}
+			]
+		},
+		"gunslinger": {
+			"id": "gunslinger",
+			"name": "Gunslinger",
+			"class": "hunter",
+			"damageType": "Solar",
+			"description": "A lone wolf who lives for the perfect shot.",
+			"superAbility": {
+				"name": "Golden Gun",
+				"description": "Summon a [s]flaming pistol[-s] that [s]disintegrates enemies[-s] with Solar Light."
+			},
+			"grenadeSkills": [
+				{
+					"name": "Incendiary Grenade",
+					"description": "A grenade whoose explosion [s]catches enemies on fire.[-s]"
+				},
+				{
+					"name": "Swarm Grenade",
+					"description": "A grenade that detonates on impact, releasing [s]multiple drones[-s] that [s]seek[-s] nearby [s]enemies.[-s]"
+				},
+				{
+					"name": "Tripmine Grenade",
+					"description": "An explosive grenade that [s]sticks to surfaces[-s] and detonates upon enemies who pass through its [s]laser trigger.[-s]"
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Way of the Outlaw",
+					"skills": [
+						{
+							"name": "Deadshot",
+							"description": "Significantly [s]improves[-s] your ability to hit with [s]Golden Gun.[-s]"
+						},
+						{
+							"name": "Chains of Woe",
+							"description": "[s]Precision kills[-s] increases weapon [s]reload speed[-s] for you and nearby allies."
+						},
+						{
+							"name": "Explosive Knife",
+							"description": "[s]Throw a knife[-s] from a distance that [s]explodes[-s] shortly after impact with this Melee Ability."
+						},
+						{
+							"name": "Six-Shooter",
+							"description": "[s]Golden Gun[-s] can be [s]fired[-s] quickly up to [s]6 times,[-s] but has a shorter duration."
+						}
+					]
+				},
+				{
+					"name": "Way of the Sharpshooter",
+					"skills": [
+						{
+							"name": "Knife-Juggler",
+							"description": "[s]Throw a knife[-s] from a distance. Precision knife kills with this Melee Ability immediately [s]recharge it.[-s]"
+						},
+						{
+							"name": "Practice Makes Perfect",
+							"description": "Enter a trance with each prcision hit, [s]reducing[-s] the [s]cooldown[-s] of your [s]Super.[-s]"
+						},
+						{
+							"name": "Crowd-Pleaser",
+							"description": "[s]Enables precision damage[-s] with Golden Gun. Precision hits with Golden Gun generate [s]Orbs of Light.[-s]"
+						},
+						{
+							"name": "Line 'Em Up",
+							"description": "Precision hits with [s]Golden Gun[-s] increase its [s]damage[-s] and extend its [s]duration.[-s]"
+						}
+					]
+				}
+			]
+		},
+		"sentinel": {
+			"id": "sentinel",
+			"name": "Sentinel",
+			"description": "Valiant heart, unwavering resolve.",
+			"class": "titan",
+			"damageType": "Void",
+			"superAbility": {
+				"name": "Sentinel Shield",
+				"description": "Press [bind] to summon a shield of Void Light. While Sentinel Shield is active, press [bind2] to attack. Hold [bind3] to guard. Press [bind4] to perform a [s]Shield Throw.[-s]"
+			},
+			"grenadeSkills": [
+				{
+					"name": "Magnetic Grenade",
+					"description": "A grenade that [s]attaches[-s] to enemies and [s]explodes twice.[-s]"
+				},
+				{
+					"name": "Voidwall Grenade",
+					"description": "A grenade that creates a [s]horizontal wall[-s] of burning Void Light."
+				},
+				{
+					"name": "Suppressor Grenade",
+					"description": "An explosive grenade that [s]prevents enemies[-s] from using [s]abilities[-s] for a short time."
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Code of the Protector",
+					"skills": [
+						{
+							"name": "Turn the Tide",
+							"description": "[s]Your Overshield[-s] from Defensive Strike lasts longer and increases [s]melee damage[-s] and [s]reload speed.[-s]"
+						},
+						{
+							"name": "Rallying Force",
+							"description": "[s]Melee[-s] kills restore [s]Health[-s] for you and nearby allies."
+						},
+						{
+							"name": "Defensive Strike",
+							"description": "[s]Kill an enemy[-s] with this Melee Ability to create an [s]overshield[-s] around you and nearby allies."
+						},
+						{
+							"name": "Ward of Dawn",
+							"description": "When Super energy is full, press and hold [bind] to create a [s]shielding dome[-s] to protect you and your allies."
+						}
+					]
+				},
+				{
+					"name": "Code of the Aggressor",
+					"skills": [
+						{
+							"name": "Shield Bash",
+							"description": "[s]After sprinting[-s] for a short time, use this Melee Ability to unleash a devastating [s]Shield Bash[-s] that [s]disorients enemies.[-s]"
+						},
+						{
+							"name": "Superior Arsenal",
+							"description": "[s]Grenade kills[-s] recharge your [s]Grenade energy.[-s]"
+						},
+						{
+							"name": "In the Trenches",
+							"description": "[s]Kills[-s] while surrounded by enemies [s]reduce[-s] the [s]cooldown[-s] of your [s]Super.[-s]"
+						},
+						{
+							"name": "Second Shield",
+							"description": "Gain an [s]additional Shield Throw charge[-s] while Sentinel Shield is active."
+						}
+					]
+				}
+			]
+		},
+		"striker": {
+			"id": "striker",
+			"name": "Striker",
+			"description": "At close quarters, a fist is better than any gun.",
+			"class": "titan",
+			"damageType": "Arc",
+			"superAbility": {
+				"name": "Fists of Havoc",
+				"description": "[s]Supercharge[-s] your fists and [s]slam the ground[-s] with the force of maelstrom."
+			},
+			"grenadeSkills": [
+				{
+					"name": "Flashbang Grenade",
+					"description": "An explosive grenade that [s]disorients enemies[-s] it damages."
+				},
+				{
+					"name": "Pulse Grenade",
+					"description": "A grenade that [s]periodically damages[-s] enemies inside its explosion radius."
+				},
+				{
+					"name": "Lightning Grenade",
+					"description": "A grenade that [s]sticks to any surface[-s] and emits [s]bolts of lightning.[-s]"
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Code of the Earthshaker",
+					"skills": [
+						{
+							"name": "Magnitude",
+							"description": "Gain an [s]additional grenade[-s] charge. [s]Increases[-s] the [s]duration[-s] of grenade effects."
+						},
+						{
+							"name": "Aftershocks",
+							"description": "[s]Damaging[-s] enemies with [s]Seismic Strike[-s] recharges your [s]grenade[-s]."
+						},
+						{
+							"name": "Seismic Strike",
+							"description": "[s]While sprinting,[-s] activate this melee ability to [s]slam[-s] shoulder-first into your target and release an Arc [s]explosion[-s] on impact."
+						},
+						{
+							"name": "Terminal Velocity",
+							"description": "Fists of Havoc's ground slam attack leaves a [s]damage-dealing field[-s] in its wake and deals more damage the [s]longer it's in the air[-s]."
+						}
+					]
+				},
+				{
+					"name": "Code of the Juggernaut",
+					"skills": [
+						{
+							"name": "Frontal Assault",
+							"description": "[s]Strike an enemy[-s] with this Melee Ability to [s]reload[-s] your weapon and increase your [s]weapon stability.[-s]"
+						},
+						{
+							"name": "Reversal",
+							"description": "[s]Melee kills[-s] immediately trigger [s]health rengeration.[-s]"
+						},
+						{
+							"name": "Knockout",
+							"description": "[s]Critically wounding[-s] an enemy or breaking their shields increases your [s]melee range[-s] and [s]damage.[-s]"
+						},
+						{
+							"name": "Trample",
+							"description": "Killing enemies with [s]Fists of Havoc[-s] extends its [s]duration[-s]."
+						}
+					]
+					
+				}
+			]
+		},
+		"dawnblade": {
+			"id": "dawnblade",
+			"name": "Dawnblade",
+			"description": "Spread your wings and set the sky ablaze.",
+			"class": "warlock",
+			"damageType": "Solar",
+			"superAbility": {
+				"name": "Daybreak",
+				"description": "Weave Solar Light into [s]blades[-s] and [s]smite[-s] your foes [s]from the skies.[-s]"
+			},
+			"grenadeSkills": [
+				{
+					"name": "Solar Grenade",
+					"description": "A grenade that creates a flare of Solar Light which [s]continuously damages[-s] enemies trapped inside."
+				},
+				{
+					"name": "Firebolt Grenade",
+					"description": "A grenade that [s]unleashes bolts[-s] of Solar Light at nearby enemies."
+				},
+				{
+					"name": "Fusion Grenade",
+					"description": "An explosive grenade that [s]deals bonus damage[-s] when it [s]attaches[-s] to a target."
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Attunement of Sky",
+					"skills": [
+						{
+							"name": "Heat Rises",
+							"description": "[s]Airborne kills[-s] recharge your [s]Grenade and Melee energy[-s]. Casting Daybreak instantly refills all your ability energy."
+						},
+						{
+							"name": "Winged Sun",
+							"description": "Engage your enemies mid-flight. [s]Fire weapons[-s] and [s]throw grenades[-s] while [s]gliding.[-s]"
+						},
+						{
+							"name": "Swift Strike",
+							"description": "[s]Strike an enemy[-s] with this Melee Ability to [s]burn[-s] your target and temporarily increase your [s]movement[-s] and [s]reload speed.[-s]"
+						},
+						{
+							"name": "Icarus Dash",
+							"description": "Press [bind] while midair to [s]dodge.[-s]"
+						}
+					]
+				},
+				{
+					"name": "Attunement of Flame",
+					"skills": [
+						{
+							"name": "Igniting Touch",
+							"description": "[s]Strike an enemy[-s] with this melee ability to [s]burn[-s] them and cause them to [s]explode[-s] when killed."
+						},
+						{
+							"name": "Fated for the Flame",
+							"description": "[s]Daybreak[-s] projectiles [s]seek targets[-s] as they travel and, upon impact, launch a streak of [s]deadly flames.[-s]"
+						},
+						{
+							"name": "Everlasting Fire",
+							"description": "Killing an enemy with [s]Daybreak[-s] extends its [s]duration.[-s]"
+						},
+						{
+							"name": "Phoenix Dive",
+							"description": "Hold [bind] while midair to quickly [s]descend[-s] and [s]restore your health.[-s] When [s]Daybreak[-s] is active, Descend causes [s]explosive[-s] damage."
+						}
+					]
+				}
+			]
+		},
+		"voidwalker": {
+			"id": "voidwalker",
+			"name": "Voidwalker",
+			"description": "From the smallest atoms bloom the greatest explosions.",
+			"class": "warlock",
+			"damageType": "Void",
+			"superAbility": {
+				"name": "Nova Bomb",
+				"description": "Hurl an [s]explosive bolt[-s] of Void Light at the enemy, disintegrating those caught within its [s]blast.[-s]"
+			},
+			"grenadeSkills": [
+				{
+					"name": "Vortex Grenade",
+					"description": "A grenade that creates a Vortex which [s]continually damages[-s] enemies trapped inside."
+				},
+				{
+					"name": "Scatter Grenade",
+					"description": "A grenade that [s]splits[-s] into many submunitions and covers a large area with [s]multiple explosions.[-s]"
+				}
+			],
+			"skillTrees": [
+				{
+					"name": "Attunement of Chaos",
+					"skills": [
+						{
+							"name": "Bloom",
+							"description": "Void ability [s]kills[-s] cause enemies to [s]explode.[-s]"
+						},
+						{
+							"name": "Chaos Accelerant",
+							"description": "Hold [bind] to draw power from your Super to [s]overcharge[-s] your [s]grenade[-s], making it deadlier and more effective."
+						},
+						{
+							"name": "Entropic Pull",
+							"description": "[s]Strike an enemy[-s] with this Melee Ability to drain your enemy's life force and use it to [s]recharge[-s] your [s]grenade.[-s]"
+						},
+						{
+							"name": "Cataclysm",
+							"description": "[s]Nova Bomb[-s] travels slowly and [s]seeks[-s] enemies. Detonations [s]shatter[-s] into smaller [s]seeker projectiles.[-s] Fire your weapon at the Nova Bomb to detonate it early."
+						}
+					]
+				},
+				{
+					"name": "Attunement of Hunger",
+					"skills": [
+						{
+							"name": "Devour",
+							"description": "[s]Kill an enemy[-s] with this melee ability to fully [s]regenerate your health[-s]. For a short time afterward, kills restore additional health."
+						},
+						{
+							"name": "Feed the Void",
+							"description": "Hold [bind] to [s]consume[-s] your grenade energy to [s]regenerate your health[-s]. Grants the [s]Devour[-s] effect."
+						},
+						{
+							"name": "Insatiable",
+							"description": "While the [s]Devour[-s] effect is active, killing enemies extends its duration and [s]recharges[-s] your [s]grenade.[-s]"
+						},
+						{
+							"name": "Vortex",
+							"description": "[s]Nova Bomb[-s] creates a singularity which [s]continually damages[-s] enemies trapped inside."
+						}
+					]
+				}
+			]
+		}
+	},
 	"enemyRaces": {
 		"cabal": {
 			"id": "cabal",
@@ -3095,6 +3606,12 @@
 	"enemyWeapons": {
 		"cabal_slug_shotgun": {
 			"id": "cabal_slug_shotgun",
+			"name": "Cabal Slug Shotgun",
+			"damageType": "Arc",
+			"enemyRace": "cabal"
+		},
+		"cabal_slug_shotgun_void": {
+			"id": "cabal_slug_shotgun_void",
 			"name": "Cabal Slug Shotgun",
 			"damageType": "Void",
 			"enemyRace": "cabal"
@@ -3165,6 +3682,12 @@
 			"damageType": "Void",
 			"enemyRace": "cabal"
 		},
+		"cabal_grenade": {
+			"id": "cabal_grenade",
+			"name": "Cabal Grenade",
+			"damageType": "Kinetic",
+			"enemyRace": "cabal"
+		},
 		"cabal_headhunter": {
 			"id": "cabal_headhunter",
 			"name": "Cabal Headhunter",
@@ -3180,6 +3703,12 @@
 		"cabal_claws_melee": {
 			"id": "cabal_claws_melee",
 			"name": "Cabal Claws Melee",
+			"damageType": "Kinetic",
+			"enemyRace": "cabal"
+		},
+		"cabal_shield": {
+			"id": "cabal_shield",
+			"name": "Cabal Shield",
 			"damageType": "Kinetic",
 			"enemyRace": "cabal"
 		},
@@ -3259,6 +3788,25 @@
 			"id": "pike",
 			"name": "Pike",
 			"enemyRace": "fallen",
+			"damageType": "Arc",
+			"description": "Mounted high rate of fire Arc turrets."
+		},
+		"shock_dagger": {
+			"id": "shock_dagger",
+			"name": "Shock Dagger",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
+		},
+		"shock_pistol": {
+			"id": "shock_pistol",
+			"name": "Shock Pistol",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
+		},
+		"shock_grenade": {
+			"id": "shock_grenade",
+			"name": "Shock Grenade",
+			"enemyRace": "fallen",
 			"damageType": "Arc"
 		},
 		
@@ -3272,7 +3820,14 @@
 			"id": "servitor_eye",
 			"name": "Servitor Eye",
 			"enemyRace": "fallen",
-			"damageType": "Void"
+			"damageType": "Void",
+			"description": "Fires void energy bursts that travel in a straight line."
+		},
+		"servitor_aura": {
+			"id": "servitor_aura",
+			"name": "Servitor Aura",
+			"enemyRace": "fallen",
+			"description": "Fallen enemies covered in this aura heal and are immune to incoming damage."
 		},
 		"shank_turret": {
 			"id": "shank_turret",
@@ -3288,13 +3843,80 @@
 		}
 	},
 	"enemyTypes": {
+		"legionary": {
+			"id": "legionary",
+			"name": "Legionary",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_melee",
+				"slug_rifle",
+				"cabal_slug_shotgun",
+				"cabal_grenade"
+			]
+		},
+		"legionary_honored": {
+			"id": "legionary_honored",
+			"name": "Honored Legionary",
+			"parent": "legionary",
+			"tier": 2
+		},
+		"legionary_blood": {
+			"id": "legionary_blood",
+			"name": "Blood Guard Legionary",
+			"parent": "legionary",
+			"tier": 3,
+			"shield": "Arc"
+		},
+		"kreth_the_living_skyfire": {
+			"id": "kreth_the_living_skyfire",
+			"name": "Kreth the Living Skyfire",
+			"parent": "legionary_blood",
+			"tier": 3
+		},
+		
+		"phalanx": {
+			"id": "phalanx",
+			"name": "Phalanx",
+			"enemyRace": "cabal",
+			"weapons": [
+				"slug_rifle",
+				"cabal_shield"
+			]
+		},
+		
+		"psion": {
+			"id": "psion",
+			"name": "Psion",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_headhunter",
+				"psionic_blast",
+				"slug_rifle"
+			]
+		},
+		"interceptor_pilot": {
+			"id": "interceptor_pilot",
+			"name": "Interceptor Pilot",
+			"parent": "psion",
+			"shield": "Void"
+		},
+		
+		"war_beast": {
+			"id": "war_beast",
+			"name": "War Beast",
+			"enemyRace": "cabal",
+			"weapons": [
+				"cabal_claws_melee"
+			]
+		},
+		
 		"centurion": {
 			"id": "centurion",
 			"name": "Centurion",
 			"enemyRace": "cabal",
 			"weapons": [
 				"cabal_melee_void",
-				"cabal_slug_shotgun",
+				"cabal_slug_shotgun_void",
 				"projection_rifle",
 				"cabal_bronto_cannon"
 			],
@@ -3326,16 +3948,6 @@
 			"tier": 4,
 			"weapons": [
 				"cabal_bronto_cannon"
-			]
-		},
-		
-		"colossus": {
-			"id": "colossus",
-			"name": "Colossus",
-			"enemyRace": "cabal",
-			"weapons": [
-				"cabal_cluster_missile",
-				"cabal_slug_launcher"
 			]
 		},
 		
@@ -3371,69 +3983,16 @@
 			"parent": "incendior_blood"
 		},
 		
-		"legionary": {
-			"id": "legionary",
-			"name": "Legionary",
+		"colossus": {
+			"id": "colossus",
+			"name": "Colossus",
 			"enemyRace": "cabal",
 			"weapons": [
-				"slug_rifle",
-				"cabal_melee"
-			]
-		},
-		"legionary_honored": {
-			"id": "legionary_honored",
-			"name": "Honored Legionary",
-			"parent": "legionary",
-			"tier": 2
-		},
-		"legionary_blood": {
-			"id": "legionary_blood",
-			"name": "Blood Guard Legionary",
-			"parent": "legionary",
-			"tier": 3,
-			"shield": "Arc"
-		},
-		"kreth_the_living_skyfire": {
-			"id": "kreth_the_living_skyfire",
-			"name": "Kreth the Living Skyfire",
-			"parent": "legionary_blood",
-			"tier": 3
-		},
-		
-		"phalanx": {
-			"id": "phalanx",
-			"name": "Phalanx",
-			"enemyRace": "cabal",
-			"weapons": [
-				"slug_rifle"
+				"cabal_cluster_missile",
+				"cabal_slug_launcher"
 			]
 		},
 		
-		"psion": {
-			"id": "psion",
-			"name": "Psion",
-			"enemyRace": "cabal",
-			"weapons": [
-				"cabal_headhunter",
-				"psionic_blast",
-				"slug_rifle"
-			]
-		},
-		"interceptor_pilot": {
-			"id": "interceptor_pilot",
-			"name": "Interceptor Pilot",
-			"parent": "psion",
-			"shield": "Void"
-		},
-		
-		"war_beast": {
-			"id": "war_beast",
-			"name": "War Beast",
-			"enemyRace": "cabal",
-			"weapons": [
-				"cabal_claws_melee"
-			]
-		},
 		
 		"goblin": {
 			"id": "goblin",
@@ -3522,45 +4081,15 @@
 			]
 		},
 		
-		"captain": {
-			"id": "captain",
-			"name": "Captain",
-			"enemyRace": "fallen",
-			"weapons": [
-				"shrapnel_launcher",
-				"fallen_molten_welder",
-				"melee"
-			],
-			"shield": "Arc"
-		},
-		"captain_resilient": {
-			"id": "captain_resilient",
-			"name": "Resilient Captain",
-			"parent": "captain",
-			"tier": 2
-		},
-		
-		"marauder": {
-			"id": "marauder",
-			"name": "Marauder",
-			"enemyRace": "fallen",
-			"weapons": [
-				"shrapnel_launcher"
-			]
-		},
-		"marauder_resilient": {
-			"id": "marauder_resilient",
-			"name": "Resilient Marauder",
-			"parent": "marauder",
-			"tier": 2
-		},
 		
 		"dreg": {
 			"id": "dreg",
 			"name": "Dreg",
 			"enemyRace": "fallen",
 			"weapons": [
-				
+				"shock_dagger",
+				"shock_pistol",
+				"shock_grenade"
 			]
 		},
 		"pike_dreg": {
@@ -3570,20 +4099,6 @@
 			"weapons": [
 				"pike"
 			]
-		},
-		
-		"servitor": {
-			"id": "servitor",
-			"name": "Servitor",
-			"enemyRace": "fallen",
-			"weapons": [
-				"servitor_eye"
-			]
-		},
-		"servitor_unyielding": {
-			"id": "servitor_unyielding",
-			"name": "Unyielding Servitor",
-			"parent": "servitor"
 		},
 		
 		"shank": {
@@ -3609,6 +4124,55 @@
 				"wire_rifle"
 			]
 		},
+		
+		"marauder": {
+			"id": "marauder",
+			"name": "Marauder",
+			"enemyRace": "fallen",
+			"weapons": [
+				"shrapnel_launcher"
+			]
+		},
+		"marauder_resilient": {
+			"id": "marauder_resilient",
+			"name": "Resilient Marauder",
+			"parent": "marauder",
+			"tier": 2
+		},
+		
+		"captain": {
+			"id": "captain",
+			"name": "Captain",
+			"enemyRace": "fallen",
+			"weapons": [
+				"shrapnel_launcher",
+				"fallen_molten_welder",
+				"melee"
+			],
+			"shield": "Arc"
+		},
+		"captain_resilient": {
+			"id": "captain_resilient",
+			"name": "Resilient Captain",
+			"parent": "captain",
+			"tier": 2
+		},
+		
+		"servitor": {
+			"id": "servitor",
+			"name": "Servitor",
+			"enemyRace": "fallen",
+			"weapons": [
+				"servitor_eye",
+				"servitor_aura"
+			]
+		},
+		"servitor_unyielding": {
+			"id": "servitor_unyielding",
+			"name": "Unyielding Servitor",
+			"parent": "servitor"
+		},
+		
 		"wretch": {
 			"id": "wretch",
 			"name": "Wretch",
