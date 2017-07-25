@@ -3584,10 +3584,28 @@
 				"name": "Nova Bomb",
 				"description": "Hurl an [s]explosive bolt[-s] of Void Light at the enemy, disintegrating those caught within its [s]blast.[-s]"
 			},
+			"movementSkills": [
+				{
+					"name": "Strafe Glide",
+					"description": "Jump while airborne to activate Glide and start and airborne drift with [s]strong directional control.[-s]"
+				},
+				{
+					"name": "Blink",
+					"description": "Jump while airborne to [s]teleport[-s] a short distance."
+				},
+				{
+					"name": "Burst Glide",
+					"description": "Jump while airborne to activate Glide and start an airborne drift with a [s]strong initial boost of speed[-s]."
+				}
+			],
 			"grenadeSkills": [
 				{
 					"name": "Vortex Grenade",
 					"description": "A grenade that creates a Vortex which [s]continually damages[-s] enemies trapped inside."
+				},
+				{
+					"name": "Axion Bolt",
+					"description": "A bolt of Void Light that forks into smaller [s]bolts[-s] on impact that [s]seek[-s] out enemies."
 				},
 				{
 					"name": "Scatter Grenade",
@@ -3912,6 +3930,12 @@
 			"name": "Wire Rifle",
 			"enemyRace": "fallen",
 			"damageType": "Arc"
+		},
+		"shock_rifle": {
+			"id": "shock_rifle",
+			"name": "Shock Rifle",
+			"enemyRace": "fallen",
+			"damageType": "Arc"
 		}
 	},
 	"enemyTypes": {
@@ -4193,7 +4217,8 @@
 			"name": "Vandal",
 			"enemyRace": "fallen",
 			"weapons": [
-				"wire_rifle"
+				"wire_rifle",
+				"shock_rifle"
 			]
 		},
 		
